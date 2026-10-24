@@ -187,3 +187,21 @@ h2 { font: 800 clamp(32px, 5vw, 52px)/1 var(--display); letter-spacing: -0.03em;
 .plain { padding-left: 22px; }
 .plain li { margin: 8px 0; }
 .plain li::marker { color: var(--honey); font-weight: 700; }
+
+/* ---- indirme sayfası */
+.dl { display: flex; flex-wrap: wrap; gap: 16px; margin: 8px 0 8px; }
+.dl__card { flex: 1 1 260px; border: 2px solid var(--honey); border-radius: 14px; padding: 18px 22px 20px; }
+.dl__card h2 { margin: 2px 0 8px; font-size: 26px; }
+.dl__card p { margin: 0 0 12px; color: var(--ash); }
+.dl__card--off { border-color: var(--hive-2); }
+.dl__tag { display: inline-block; color: var(--honey); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; font-size: 13px; }
+.dl__card--off .dl__tag { color: var(--ash); }
+.dl__btn { display: inline-block; background: var(--honey); color: var(--ink); border-radius: 999px; padding: 12px 26px; font: 800 19px/1.2 var(--display); text-decoration: none; }
+.dl__btn:hover, .dl__btn:focus-visible { background: var(--wax); }
+.dl__card .dl__small { margin: 12px 0 0; font-size: 14px; }
+.vid { margin: 18px 0 8px; max-width: 320px; }
+.vid video { display: block; width: 100%; height: auto; border-radius: 18px; border: 1px solid var(--hive-2); background: var(--hive); }
+.vid figcaption { color: var(--ash); font-size: 14px; margin-top: 6px; }
+.hash { word-break: break-all; font-size: 13px; }
+.where li .now a { color: inherit; }
+.doc code { overflow-wrap: anywhere; word-break: break-word; }
