@@ -161,3 +161,29 @@ h2 { font: 800 clamp(32px, 5vw, 52px)/1 var(--display); letter-spacing: -0.03em;
 .doc table { border-collapse: collapse; width: 100%; font-size: 15px; min-width: 560px; }
 .doc th, .doc td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--hive-2); vertical-align: top; }
 .doc th { color: var(--ash); font-weight: 700; }
+
+/* ---- yardım sayfası */
+.doc--wide { max-width: 980px; }
+.toc { display: flex; flex-wrap: wrap; gap: 8px 10px; margin: 0 0 8px; }
+.toc a { color: var(--wax); text-decoration: none; border: 1px solid var(--hive-2); border-radius: 999px; padding: 6px 14px; font-size: 16px; }
+.toc a:hover { border-color: var(--honey); }
+.need { border: 2px solid var(--honey); border-radius: 14px; padding: 18px 22px 10px; margin: 0 0 24px; }
+.need__title { color: var(--honey); font-weight: 700; margin: 0 0 4px; text-transform: uppercase; letter-spacing: 0.08em; font-size: 14px; }
+.need b { color: var(--wax); }
+.doc h3 { font-size: 21px; margin: 0 0 6px; }
+.steps { list-style: none; counter-reset: adim; padding: 0; margin: 24px 0 0; }
+.steps > li { counter-increment: adim; position: relative; padding: 0 0 32px 52px; margin: 0; }
+.steps > li::before { content: counter(adim); position: absolute; left: 0; top: -2px; width: 36px; height: 36px; border-radius: 50%; background: var(--honey); color: var(--ink); font: 800 19px/36px var(--display); text-align: center; }
+.steps > li::after { content: ''; position: absolute; left: 17px; top: 42px; bottom: 8px; width: 2px; background: var(--hive-2); }
+.steps > li:last-child::after { display: none; }
+.steps__text p { margin: 0 0 8px; color: var(--ash); }
+.steps__text b { color: var(--wax); }
+.shots { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; margin-top: 14px; }
+.shot { margin: 0; flex: 1 1 420px; max-width: 640px; }
+.shot--phone { flex: 0 1 220px; max-width: 240px; }
+.shot img { border-radius: 10px; border: 1px solid var(--hive-2); }
+.shot--phone img { border-radius: 18px; }
+.shot figcaption { color: var(--ash); font-size: 14px; margin-top: 6px; }
+.plain { padding-left: 22px; }
+.plain li { margin: 8px 0; }
+.plain li::marker { color: var(--honey); font-weight: 700; }

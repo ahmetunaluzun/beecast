@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help — Bee Cast</title>
+  <meta name="description" content="Move your Bee Cast playlists, favourites and settings between your TV and phone, or keep them in a backup file.">
+  <link rel="icon" href="../assets/img/simge-64.png" type="image/png">
+  <link rel="alternate" hreflang="tr" href="../yardim.html">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./" aria-label="Bee Cast home"><img src="../assets/img/simge-64.png" alt="" width="40" height="40"><span>Bee Cast</span></a>
+      <nav aria-label="Site">
+        <a class="opt" href="./#support">Support</a>
+        <a class="lang" href="../yardim.html" lang="tr" hreflang="tr">Türkçe</a>
+      </nav>
+    </header>
+
+    <main id="content" class="doc doc--wide">
+      <h1>Help</h1>
+      <p class="meta">App version 0.3.0 · Updated 24 October 2026</p>
+
+      <nav class="toc" aria-label="On this page">
+        <a href="#tv-to-phone">Get your TV's list on your phone</a>
+        <a href="#phone-to-tv">Restore a phone backup on your TV</a>
+        <a href="#tv-to-tv">Move from one TV to another</a>
+        <a href="#file">Backup file</a>
+        <a href="#problems">If it doesn't work</a>
+      </nav>
+
+      <section id="before" aria-labelledby="h-before">
+        <h2 id="h-before">Before you start</h2>
+        <div class="need">
+          <p class="need__title">You need</p>
+          <ul>
+            <li><b>The phone and the TV on the same home network.</b> Both connected to the same router. Don't use a guest network: devices on a guest network can't see each other.</li>
+            <li><b>Bee Cast on both.</b> On the phone you need the Android version.</li>
+            <li><b>The Back up and move screen open on the phone.</b> The phone only accepts the connection while this screen is open. It closes when you leave the screen or after 5 minutes without activity.</li>
+            <li><b>Android 17 and later:</b> the phone asks for "local network" access. Without it the TV can't find the phone.</li>
+          </ul>
+        </div>
+        <p>What moves: your playlist details (with passwords), favourites, watch history and resume points, settings and recent searches. Channel and film lists don't move; the new device downloads them again from your provider. The MAC device code only moves when "Include MAC code" is on.</p>
+        <p>Restoring merges, it never deletes: playlists and favourites already on the device stay, new ones are added.</p>
+      </section>
+
+      <section id="tv-to-phone" aria-labelledby="h-tvp">
+        <h2 id="h-tvp">Get your TV's list on your phone</h2>
+        <p>The TV leaves a backup on the phone, then the phone restores it.</p>
+
+        <ol class="steps">
+          <li>
+            <div class="steps__text">
+              <h3>Open the connection on the phone</h3>
+              <p>Open Bee Cast, tap the gear at the top right (Settings) and choose <b>Back up and move</b>. Tap <b>Open TV connection</b>.</p>
+              <p>Below it you'll see "Open · number …". Note the number; you'll type it with the remote if the TV can't find the phone.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot shot--phone"><img src="../assets/img/help/phone-1-back-up-and-move.webp" width="540" height="1098" alt="Phone: Settings, Back up and move screen with the Open TV connection button." loading="lazy"><figcaption>Before</figcaption></figure>
+              <figure class="shot shot--phone"><img src="../assets/img/help/phone-2-connection-open.webp" width="540" height="1098" alt="Connection open: Open, number 42." loading="lazy"><figcaption>Connection open</figcaption></figure>
+            </div>
+          </li>
+          <li>
+            <div class="steps__text">
+              <h3>On the TV, Back up to phone</h3>
+              <p>With the remote go to Settings › <b>Back up and move</b> and press <b>Back up to phone</b>. The TV looks for the phone on your home network; this can take up to 15 seconds.</p>
+              <p>If it can't find the phone it asks for the number shown on the phone. Type it and press <b>Connect</b>.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot"><img src="../assets/img/help/tv-1-back-up-and-move.webp" width="1280" height="720" alt="TV: Settings, Back up and move with Back up to phone selected." loading="lazy"><figcaption>Settings › Back up and move</figcaption></figure>
+              <figure class="shot"><img src="../assets/img/help/tv-2-searching.webp" width="1160" height="500" alt="TV: looking for the phone, with a Cancel button." loading="lazy"><figcaption>Looking for the phone</figcaption></figure>
+            </div>
+          </li>
+          <li>
+            <div class="steps__text">
+              <h3>Compare the code and confirm</h3>
+              <p>A 4-digit code appears on the TV. The same code appears on the phone, which asks whether it matches the one on the TV.</p>
+              <p>If the codes match, tap <b>Yes, same</b> on the phone. If they don't, tap <b>No</b>: the device trying to connect isn't your TV.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot"><img src="../assets/img/help/tv-3-code.webp" width="1160" height="500" alt="TV: Confirm this code on Galaxy A54, code shown in large digits." loading="lazy"><figcaption>TV</figcaption></figure>
+              <figure class="shot shot--phone"><img src="../assets/img/help/phone-3-confirm-code.webp" width="540" height="1098" alt="Phone: Samsung TV wants to connect, same code, Yes same and No buttons." loading="lazy"><figcaption>Phone</figcaption></figure>
+            </div>
+          </li>
+          <li>
+            <div class="steps__text">
+              <h3>The backup arrives on the phone</h3>
+              <p>The TV says "Backup saved on the phone." On the phone the TV's name and the date appear under the saved backups.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot"><img src="../assets/img/help/tv-4-saved.webp" width="1160" height="500" alt="TV: Backup saved on the phone." loading="lazy"><figcaption>TV</figcaption></figure>
+              <figure class="shot shot--phone"><img src="../assets/img/help/phone-4-backup-received.webp" width="540" height="1098" alt="Phone: Samsung TV backup with Restore here, Share and Delete buttons." loading="lazy"><figcaption>Phone</figcaption></figure>
+            </div>
+          </li>
+          <li>
+            <div class="steps__text">
+              <h3>Restore it on the phone</h3>
+              <p>Tap <b>Restore here</b> under the backup. The phone shows how many playlists, favourites and watch records it added and restarts. The lists are then downloaded from your provider; large lists take a while.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="phone-to-tv" aria-labelledby="h-ptv">
+        <h2 id="h-ptv">Restore a phone backup on your TV</h2>
+        <p>To set up a new TV without typing your list with the remote. Works if Bee Cast on the phone has a playlist, or if a TV's backup has been saved on the phone before.</p>
+        <ol class="steps">
+          <li>
+            <div class="steps__text">
+              <h3>Open the connection on the phone</h3>
+              <p>Settings › Back up and move › <b>Open TV connection</b> (step 1 above).</p>
+            </div>
+          </li>
+          <li>
+            <div class="steps__text">
+              <h3>On the TV, Restore from phone</h3>
+              <p>On the TV go to Settings › Back up and move and press <b>Restore from phone</b>. When the code appears, tap <b>Yes, same</b> on the phone.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot"><img src="../assets/img/help/tv-5-restore-code.webp" width="1160" height="500" alt="TV: Confirm this code on Galaxy A54." loading="lazy"></figure>
+            </div>
+          </li>
+          <li>
+            <div class="steps__text">
+              <h3>Choose a backup</h3>
+              <p>The TV lists the backups on the phone. "<i>phone name</i> · data on the phone" is the phone's own list; the others are backups TVs saved on the phone before.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot"><img src="../assets/img/help/tv-6-choose-backup.webp" width="1160" height="500" alt="TV: Choose a backup to restore. Galaxy A54 data on the phone, and a Samsung TV backup." loading="lazy"></figure>
+            </div>
+          </li>
+          <li>
+            <div class="steps__text">
+              <h3>Confirm</h3>
+              <p>The TV asks whether to add it to this device and says playlists and favourites already there are kept. Press <b>Restore</b>. The TV shows what it added and restarts the app.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot"><img src="../assets/img/help/tv-7-restore-confirm.webp" width="1160" height="500" alt="TV: add to this device question with Restore and Cancel buttons." loading="lazy"></figure>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="tv-to-tv" aria-labelledby="h-tvtv">
+        <h2 id="h-tvtv">Move from one TV to another</h2>
+        <p>The phone carries the backup; the two TVs don't need to be on at the same time.</p>
+        <ol class="plain">
+          <li>On the old TV: steps 1–4 of <a href="#tv-to-phone">Get your TV's list on your phone</a> (no need to restore on the phone).</li>
+          <li>On the new TV: <a href="#phone-to-tv">Restore a phone backup on your TV</a> and choose the old TV's backup.</li>
+        </ol>
+        <p>The phone keeps up to the last 3 backups from each TV. Remove the ones you don't need with <b>Delete</b> on the phone.</p>
+      </section>
+
+      <section id="file" aria-labelledby="h-file">
+        <h2 id="h-file">Backup file (phone, tablet, computer)</h2>
+        <p>To keep a copy without the network, or to move to another phone. The TV doesn't work with files; for the TV use the ways above.</p>
+        <ol class="plain">
+          <li>Settings › Back up and move › <b>Share backup</b> (on a computer, <b>Save backup to file</b>).</li>
+          <li>Type a backup password (at least 6 characters) twice. The file includes your playlist passwords and can't be opened without it. <b>If you forget the password the backup can't be opened, not even by us.</b></li>
+          <li>Email the file to yourself or put it on Drive. The file never reaches us.</li>
+          <li>On the new device: <b>Restore from file</b> › <b>Choose file</b> › type the password.</li>
+        </ol>
+      </section>
+
+      <section id="problems" aria-labelledby="h-pr">
+        <h2 id="h-pr">If it doesn't work</h2>
+        <dl class="faq">
+          <dt>The TV says "Phone not found".</dt>
+          <dd>Check that Back up and move is open on the phone and shows "Open · number …". Type the phone's number on the TV. If it still fails, check that both are on the same Wi-Fi (not a guest network).</dd>
+          <dt>"Couldn't reach the phone."</dt>
+          <dd>The phone's screen may have turned off or another app may be in front. Open Bee Cast on the Back up and move screen and try again.</dd>
+          <dt>"The connection expired."</dt>
+          <dd>Nothing happened for 5 minutes. Start again on the TV; if the connection closed on the phone, open it again.</dd>
+          <dt>"Local network access was denied."</dt>
+          <dd>Turn on local network access for Bee Cast in the phone's Settings › Apps › Bee Cast › Permissions.</dd>
+          <dt>The codes are different.</dt>
+          <dd>Tap <b>No</b> on the phone. Another TV at home may be trying to connect at the same time; start again from the right TV.</dd>
+        </dl>
+        <p style="margin-top:32px">If none of this helps, write to us with your TV model, the app version (Settings › About) and what the screen says.</p>
+        <a class="mail" href="mailto:ahmetunaluzun@gmail.com?subject=Bee%20Cast%20help">ahmetunaluzun@gmail.com</a>
+      </section>
+
+      <section id="safety" aria-labelledby="h-sa">
+        <h2 id="h-sa">Is it safe?</h2>
+        <ul>
+          <li>The phone only accepts the connection while Back up and move is open; it closes when you leave the screen.</li>
+          <li>Nothing moves until the code is confirmed on the phone. Matching codes mean no other device got in between.</li>
+          <li>The data is encrypted and stays on your home network; nothing goes to the internet or to us.</li>
+        </ul>
+        <p>Details: <a href="privacy.html#backup">Privacy policy › Backup and moving</a>.</p>
+      </section>
+
+      <h2 id="version-history">Version history</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Version</th><th>Date</th><th>Changed</th><th>Old value</th><th>New value</th><th>Why</th></tr></thead>
+          <tbody>
+            <tr><td>1.0.0</td><td>24.10.2026</td><td>Whole page</td><td>—</td><td>First release: back up and move guide</td><td>New feature</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="meta" style="margin-top:16px">Screenshots taken on a Samsung TV and an Android phone. The phone name and number are examples; you'll see your own phone's name and number.</p>
+    </main>
+
+    <footer class="foot">
+      <ul class="keys" aria-label="Shortcuts">
+        <li><a href="privacy.html"><i class="k-red" aria-hidden="true"></i>Red: Privacy</a></li>
+        <li><a href="./#support"><i class="k-green" aria-hidden="true"></i>Green: Support</a></li>
+        <li><a href="#content"><i class="k-yellow" aria-hidden="true"></i>Yellow: Help</a></li>
+        <li><a href="../yardim.html" lang="tr"><i class="k-blue" aria-hidden="true"></i>Blue: Türkçe</a></li>
+      </ul>
+      <small>© 2026 Ahmet Ünal Uzun. Bee Cast doesn't provide content.</small>
+    </footer>
+  </div>
+</body>
+</html>

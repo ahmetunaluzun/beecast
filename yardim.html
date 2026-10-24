@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yardım — Bee Cast</title>
+  <meta name="description" content="Bee Cast'te playlist'ini, favorilerini ve ayarlarını televizyon ile telefon arasında taşıma, yedek dosyası oluşturma.">
+  <link rel="icon" href="assets/img/simge-64.png" type="image/png">
+  <link rel="alternate" hreflang="en" href="en/help.html">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#icerik">İçeriğe geç</a>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./" aria-label="Bee Cast ana sayfa"><img src="assets/img/simge-64.png" alt="" width="40" height="40"><span>Bee Cast</span></a>
+      <nav aria-label="Site">
+        <a class="opt" href="./#destek">Destek</a>
+        <a class="lang" href="en/help.html" lang="en" hreflang="en">English</a>
+      </nav>
+    </header>
+
+    <main id="icerik" class="doc doc--wide">
+      <h1>Yardım</h1>
+      <p class="meta">Uygulama sürümü 0.3.0 · Güncelleme: 24 Ekim 2026</p>
+
+      <nav class="toc" aria-label="Bu sayfada">
+        <a href="#tv-telefon">TV'deki listeni telefona al</a>
+        <a href="#telefon-tv">Telefondaki yedeği TV'ye yükle</a>
+        <a href="#tv-tv">Bir TV'den öbür TV'ye taşı</a>
+        <a href="#dosya">Yedek dosyası</a>
+        <a href="#sorunlar">Olmuyorsa</a>
+      </nav>
+
+      <section id="once" aria-labelledby="h-once">
+        <h2 id="h-once">Başlamadan önce</h2>
+        <div class="need">
+          <p class="need__title">Gerekenler</p>
+          <ul>
+            <li><b>Telefon ve TV aynı ev ağında olmalı.</b> İkisi de aynı modeme bağlı olsun. Misafir ağı (guest) kullanma; misafir ağında cihazlar birbirini görmez.</li>
+            <li><b>İkisinde de Bee Cast kurulu olmalı.</b> Telefonda Android sürümü gerekir.</li>
+            <li><b>Telefonda Yedekle ve taşı ekranı açık kalmalı.</b> Telefon bağlantıyı yalnız bu ekran açıkken kabul eder. Ekrandan çıkarsan ya da 5 dakika işlem olmazsa bağlantı kapanır.</li>
+            <li><b>Android 17 ve sonrası:</b> telefon "yerel ağ" izni ister. İzin vermezsen TV telefonu bulamaz.</li>
+          </ul>
+        </div>
+        <p>Taşınanlar: playlist bilgilerin (şifreleriyle), favorilerin, izleme geçmişin ve kaldığın yerler, ayarların, son aramaların. Kanal ve film listeleri taşınmaz; yeni cihaz bunları sağlayıcından yeniden indirir. MAC cihaz kodu yalnız "MAC kodu da taşınsın" açıksa taşınır.</p>
+        <p>Yükleme birleştirir, silmez: cihazda olan playlist ve favoriler yerinde kalır, yenileri eklenir.</p>
+      </section>
+
+      <section id="tv-telefon" aria-labelledby="h-tvt">
+        <h2 id="h-tvt">TV'deki listeni telefona al</h2>
+        <p>TV yedeğini telefona bırakır, sonra telefon bu yedeği kendine yükler.</p>
+
+        <ol class="steps">
+          <li>
+            <div class="steps__text">
+              <h3>Telefonda bağlantıyı aç</h3>
+              <p>Bee Cast'i aç, sağ üstteki dişliye (Ayarlar) dokun, <b>Yedekle ve taşı</b>'yı seç. <b>TV bağlantısını aç</b>'a dokun.</p>
+              <p>Altında "Açık · numara …" yazar. Bu numarayı not et; TV telefonu bulamazsa kumandayla yazacaksın.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot shot--phone"><img src="assets/img/yardim/telefon-1-yedekle-ve-tasi.webp" width="540" height="1098" alt="Telefonda Ayarlar, Yedekle ve taşı ekranı. TV bağlantısını aç düğmesi görünüyor." loading="lazy"><figcaption>Önce</figcaption></figure>
+              <figure class="shot shot--phone"><img src="assets/img/yardim/telefon-2-baglanti-acik.webp" width="540" height="1098" alt="Bağlantı açık: Açık, numara 42 yazıyor." loading="lazy"><figcaption>Bağlantı açık</figcaption></figure>
+            </div>
+          </li>
+          <li>
+            <div class="steps__text">
+              <h3>TV'de Telefona yedekle</h3>
+              <p>Kumandayla Ayarlar › <b>Yedekle ve taşı</b>'ya gel, <b>Telefona yedekle</b>'ye bas. TV evdeki ağda telefonu arar; bu 15 saniye kadar sürebilir.</p>
+              <p>Telefonu bulamazsa telefondaki numarayı yazmanı ister. Numarayı yaz, <b>Bağlan</b>'a bas.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot"><img src="assets/img/yardim/tv-1-yedekle-ve-tasi.webp" width="1280" height="720" alt="TV'de Ayarlar, Yedekle ve taşı: Telefona yedekle düğmesi seçili." loading="lazy"><figcaption>Ayarlar › Yedekle ve taşı</figcaption></figure>
+              <figure class="shot"><img src="assets/img/yardim/tv-2-telefon-araniyor.webp" width="1160" height="500" alt="TV: Telefon aranıyor, İptal düğmesi." loading="lazy"><figcaption>Telefon aranıyor</figcaption></figure>
+            </div>
+          </li>
+          <li>
+            <div class="steps__text">
+              <h3>Kodu karşılaştır ve onayla</h3>
+              <p>TV'de 4 haneli bir kod çıkar. Aynı kod telefonda da görünür ve "… bağlanmak istiyor. Kod TV'dekiyle aynı mı?" diye sorar.</p>
+              <p>Kodlar aynıysa telefonda <b>Evet, aynı</b>'ya dokun. Farklıysa <b>Hayır</b> de; bu, bağlanmaya çalışan cihazın senin TV'n olmadığı anlamına gelir.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot"><img src="assets/img/yardim/tv-3-kod.webp" width="1160" height="500" alt="TV: Galaxy A54 ekranında bu kodu onayla, kod 5612." loading="lazy"><figcaption>TV</figcaption></figure>
+              <figure class="shot shot--phone"><img src="assets/img/yardim/telefon-3-kod-onay.webp" width="540" height="1098" alt="Telefon: Samsung TV bağlanmak istiyor, kod 5612, Evet aynı ve Hayır düğmeleri." loading="lazy"><figcaption>Telefon</figcaption></figure>
+            </div>
+          </li>
+          <li>
+            <div class="steps__text">
+              <h3>Yedek telefona gelir</h3>
+              <p>TV "Yedek telefona kaydedildi" der. Telefonda <b>Bu telefondaki yedekler</b> altında TV'nin adı ve tarih görünür.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot"><img src="assets/img/yardim/tv-4-kaydedildi.webp" width="1160" height="500" alt="TV: Yedek telefona kaydedildi." loading="lazy"><figcaption>TV</figcaption></figure>
+              <figure class="shot shot--phone"><img src="assets/img/yardim/telefon-4-yedek-geldi.webp" width="540" height="1098" alt="Telefon: Bu telefondaki yedekler altında Samsung TV yedeği; Bu cihaza yükle, Paylaş, Sil düğmeleri." loading="lazy"><figcaption>Telefon</figcaption></figure>
+            </div>
+          </li>
+          <li>
+            <div class="steps__text">
+              <h3>Telefona yükle</h3>
+              <p>Yedeğin altındaki <b>Bu cihaza yükle</b>'ye dokun. Telefon kaç playlist, favori ve izleme kaydı eklediğini yazar ve yeniden açılır. Listeler sağlayıcından indirilir; büyük listelerde bu biraz sürer.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="telefon-tv" aria-labelledby="h-ttv">
+        <h2 id="h-ttv">Telefondaki yedeği TV'ye yükle</h2>
+        <p>Yeni bir TV'ye listeni kumandayla tek tek yazmadan girmek için. Telefonda Bee Cast'te playlist varsa ya da telefona daha önce bir TV'nin yedeği geldiyse kullanılabilir.</p>
+        <ol class="steps">
+          <li>
+            <div class="steps__text">
+              <h3>Telefonda bağlantıyı aç</h3>
+              <p>Ayarlar › Yedekle ve taşı › <b>TV bağlantısını aç</b> (yukarıdaki 1. adım).</p>
+            </div>
+          </li>
+          <li>
+            <div class="steps__text">
+              <h3>TV'de Telefondaki yedekten yükle</h3>
+              <p>TV'de Ayarlar › Yedekle ve taşı › <b>Telefondaki yedekten yükle</b>'ye bas. Kod çıkınca telefonda <b>Evet, aynı</b>'ya dokun.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot"><img src="assets/img/yardim/tv-5-yukle-kod.webp" width="1160" height="500" alt="TV: Galaxy A54 ekranında bu kodu onayla." loading="lazy"></figure>
+            </div>
+          </li>
+          <li>
+            <div class="steps__text">
+              <h3>Yedeği seç</h3>
+              <p>TV telefondaki yedekleri listeler. "<i>telefonun adı</i> · telefondaki veriler" telefonun kendi listesidir; altındakiler telefona daha önce TV'lerden gelen yedeklerdir.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot"><img src="assets/img/yardim/tv-6-yedek-sec.webp" width="1160" height="500" alt="TV: Yüklenecek yedeği seç. Galaxy A54 telefondaki veriler ve Samsung TV yedeği." loading="lazy"></figure>
+            </div>
+          </li>
+          <li>
+            <div class="steps__text">
+              <h3>Onayla</h3>
+              <p>TV "… bu cihaza eklensin mi? Buradaki playlist ve favoriler silinmez." diye sorar. <b>Yükle</b>'ye bas. TV eklediklerini yazar ve uygulamayı yeniden açar.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot"><img src="assets/img/yardim/tv-7-yukle-onay.webp" width="1160" height="500" alt="TV: bu cihaza eklensin mi sorusu, Yükle ve İptal düğmeleri." loading="lazy"></figure>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="tv-tv" aria-labelledby="h-tvtv">
+        <h2 id="h-tvtv">Bir TV'den öbür TV'ye taşı</h2>
+        <p>Telefon arada taşıyıcıdır; iki TV'nin aynı anda açık olması gerekmez.</p>
+        <ol class="plain">
+          <li>Eski TV'de: <a href="#tv-telefon">TV'deki listeni telefona al</a> bölümünün 1–4. adımları (telefona yükleme adımı gerekmez).</li>
+          <li>Yeni TV'de: <a href="#telefon-tv">Telefondaki yedeği TV'ye yükle</a>; listede eski TV'nin yedeğini seç.</li>
+        </ol>
+        <p>Telefon her TV'nin en fazla son 3 yedeğini saklar. Gerek kalmayanları telefonda <b>Sil</b> ile kaldırabilirsin.</p>
+      </section>
+
+      <section id="dosya" aria-labelledby="h-do">
+        <h2 id="h-do">Yedek dosyası (telefon, tablet, bilgisayar)</h2>
+        <p>Ağ gerekmeden saklamak ya da başka bir telefona geçmek için. TV dosya ile çalışmaz; TV için yukarıdaki yolları kullan.</p>
+        <ol class="plain">
+          <li>Ayarlar › Yedekle ve taşı › <b>Yedeği paylaş</b> (bilgisayarda <b>Yedeği dosyaya kaydet</b>).</li>
+          <li>Bir yedek şifresi yaz (en az 6 karakter) ve tekrarla. Dosyada playlist şifrelerin de var; bu şifre olmadan dosya açılmaz. <b>Şifreyi unutursan yedek açılmaz, biz de açamayız.</b></li>
+          <li>Dosyayı kendine mail at ya da Drive'a koy. Dosya bize gelmez.</li>
+          <li>Yeni cihazda: <b>Yedek dosyasından yükle</b> › <b>Dosya seç</b> › şifreyi yaz.</li>
+        </ol>
+      </section>
+
+      <section id="sorunlar" aria-labelledby="h-so">
+        <h2 id="h-so">Olmuyorsa</h2>
+        <dl class="faq">
+          <dt>TV "Telefon bulunamadı" diyor.</dt>
+          <dd>Telefonda Yedekle ve taşı ekranının açık ve "Açık · numara …" yazdığına bak. Telefondaki numarayı TV'ye yaz. Hâlâ olmuyorsa ikisinin aynı Wi-Fi'da olduğunu kontrol et (misafir ağı değil).</dd>
+          <dt>"Telefona ulaşılamadı."</dt>
+          <dd>Telefon ekranı kapanmış ya da başka bir uygulamaya geçilmiş olabilir. Telefonda Bee Cast'i Yedekle ve taşı ekranında aç ve yeniden dene.</dd>
+          <dt>"Bağlantının süresi doldu."</dt>
+          <dd>5 dakika işlem olmadı. TV'de yeniden başlat; telefonda bağlantı kapandıysa yeniden aç.</dd>
+          <dt>"Yerel ağ izni verilmedi."</dt>
+          <dd>Telefonun Ayarlar › Uygulamalar › Bee Cast › İzinler bölümünden yerel ağ iznini aç.</dd>
+          <dt>Kodlar farklı.</dt>
+          <dd>Telefonda <b>Hayır</b> de. Evde başka bir TV aynı anda bağlanmaya çalışıyor olabilir; işlemi doğru TV'den yeniden başlat.</dd>
+        </dl>
+        <p style="margin-top:32px">Bunlar işe yaramadıysa televizyonunun modelini, uygulama sürümünü (Ayarlar › Hakkında) ve ekranda yazanı ekleyerek yaz.</p>
+        <a class="mail" href="mailto:ahmetunaluzun@gmail.com?subject=Bee%20Cast%20yard%C4%B1m">ahmetunaluzun@gmail.com</a>
+      </section>
+
+      <section id="guvenlik" aria-labelledby="h-gu">
+        <h2 id="h-gu">Güvenli mi?</h2>
+        <ul>
+          <li>Telefon bağlantıyı yalnız Yedekle ve taşı ekranı açıkken kabul eder; ekrandan çıkınca kapanır.</li>
+          <li>Hiçbir şey kod telefonda onaylanmadan aktarılmaz. Kodlar aynıysa araya başka cihaz girmemiştir.</li>
+          <li>Aktarılan veri şifrelidir ve yalnız evindeki ağda gider; internete ya da bize hiçbir şey gönderilmez.</li>
+        </ul>
+        <p>Ayrıntı: <a href="gizlilik.html#yedekleme">Gizlilik politikası › Yedekleme ve taşıma</a>.</p>
+      </section>
+
+      <h2 id="surum-gecmisi">Sürüm geçmişi</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Sürüm</th><th>Tarih</th><th>Değişen alan</th><th>Eski değer</th><th>Yeni değer</th><th>Neden</th></tr></thead>
+          <tbody>
+            <tr><td>1.0.0</td><td>24.10.2026</td><td>Sayfanın tamamı</td><td>—</td><td>İlk yayın: yedekle ve taşı tarifleri</td><td>Yeni özellik</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="meta" style="margin-top:16px">Ekran görüntüleri Samsung TV ve Android telefonda alındı. Telefon adı ve numarası örnektir; senin ekranında kendi telefonunun adı ve numarası görünür.</p>
+    </main>
+
+    <footer class="foot">
+      <ul class="keys" aria-label="Kısayollar">
+        <li><a href="gizlilik.html"><i class="k-red" aria-hidden="true"></i>Kırmızı: Gizlilik</a></li>
+        <li><a href="./#destek"><i class="k-green" aria-hidden="true"></i>Yeşil: Destek</a></li>
+        <li><a href="#icerik"><i class="k-yellow" aria-hidden="true"></i>Sarı: Yardım</a></li>
+        <li><a href="en/help.html" lang="en"><i class="k-blue" aria-hidden="true"></i>Mavi: English</a></li>
+      </ul>
+      <small>© 2026 Ahmet Ünal Uzun. Bee Cast içerik sağlamaz.</small>
+    </footer>
+  </div>
+</body>
+</html>
