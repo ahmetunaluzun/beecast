@@ -22,7 +22,7 @@
 
     <main id="content" class="doc">
       <h1>Privacy policy</h1>
-      <p class="meta">Version 1.0.0 · Effective 24 October 2026 · Covers every version of the Bee Cast app and this site</p>
+      <p class="meta">Version 1.1.0 · Effective 24 October 2026 · Covers every version of the Bee Cast app and this site</p>
 
       <div class="short">
         <p>In short: Bee Cast collects no data from you and sends nothing to us.</p>
@@ -46,10 +46,19 @@
         <li>Your settings: language, look, text size, audio and subtitle preferences, parental lock PIN.</li>
         <li>A device code generated on the device for MAC portals.</li>
       </ul>
-      <p>None of this leaves your device or is sent to us. Deleting a playlist in Settings also deletes its channels, movies, series, favourites and watch history. Uninstalling the app deletes everything.</p>
+      <p>None of this is sent to us. It only leaves your device if you back it up yourself (see Backup and moving below). Deleting a playlist in Settings also deletes its channels, movies, series, favourites and watch history. Uninstalling the app deletes everything.</p>
+
+      <h2 id="backup">Backup and moving</h2>
+      <p>Settings › Back up and move only runs when you start it. A backup contains your playlist details (including passwords), favourites, watch history, settings and recent searches. The MAC device code is included only if you choose. Channel and movie lists are not included.</p>
+      <ul>
+        <li>Backup file: encrypted with a password you choose. You decide where to send the file (email, Drive and so on); it never reaches us. Without the password the file can't be opened; if you forget it, we can't open it either.</li>
+        <li>Moving between phone and TV: when you tap "Open TV connection" on the phone, it accepts connections only from devices on the same local network (your home Wi-Fi) and closes the connection when you leave that screen. The TV scans its own local network to find the phone. Nothing is transferred until you confirm on the phone the code shown on both screens, and the data sent is encrypted. Nothing goes to the internet or to us.</li>
+        <li>Backups received from TVs are kept in the app's storage on your phone (at most three per device). You can delete them in Settings › Back up and move; uninstalling the app deletes them.</li>
+        <li>On Android 17 and later the phone asks for local network permission for this connection. Without it you can still back up with a file.</li>
+      </ul>
 
       <h2>What the app connects to</h2>
-      <p>Bee Cast only connects to addresses you enter: your playlist or provider server, the programme guide URL and the streams you play. Like any internet connection, these servers see your device's IP address and the app's user agent. Your provider handles that data under its own terms; check its privacy policy.</p>
+      <p>Bee Cast only connects to addresses you enter: your playlist or provider server, the programme guide URL and the streams you play. If you use Back up and move, it also connects your phone and TV over your home's local network. Like any internet connection, these servers see your device's IP address and the app's user agent. Your provider handles that data under its own terms; check its privacy policy.</p>
       <p>The maker of your TV or phone (for example Samsung or Google) and the app store may collect their own data about device and store use under their own policies. That is outside our control.</p>
 
       <h2>This site</h2>
@@ -59,7 +68,7 @@
       <p>Bee Cast collects no personal data, so it collects none from children either. You can hide adult content with the parental lock; it applies to content your provider marks as adult.</p>
 
       <h2>Changes</h2>
-      <p>If a feature that sends data is ever added (for example an account or backup), this page will be updated beforehand and the change recorded in the version history below.</p>
+      <p>If a feature that sends data or stores new data is added, this page will be updated beforehand and the change recorded in the version history below.</p>
 
       <h2>Contact</h2>
       <p>Bee Cast is published by Ahmet Ünal Uzun. For questions and problems: <a href="mailto:ahmetunaluzun@gmail.com?subject=Bee%20Cast%20privacy">ahmetunaluzun@gmail.com</a></p>
@@ -69,6 +78,9 @@
         <table>
           <thead><tr><th>Version</th><th>Date</th><th>Changed section</th><th>Old value</th><th>New value</th><th>Reason</th></tr></thead>
           <tbody>
+            <tr><td>1.1.0</td><td>2026-10-24</td><td>Backup and moving</td><td>—</td><td>New section: backup file, local network transfer between phone and TV, backups kept on the phone</td><td>New feature: Back up and move</td></tr>
+            <tr><td>1.1.0</td><td>2026-10-24</td><td>What is stored on your device</td><td>"None of this leaves your device…"</td><td>"It only leaves your device if you back it up yourself…"</td><td>New feature: Back up and move</td></tr>
+            <tr><td>1.1.0</td><td>2026-10-24</td><td>What the app connects to</td><td>Only provider, guide and stream addresses</td><td>Local connection between phone and TV added when Back up and move is used</td><td>New feature: Back up and move</td></tr>
             <tr><td>1.0.0</td><td>2026-10-24</td><td>Whole document</td><td>—</td><td>First versioned release</td><td>App store submission</td></tr>
           </tbody>
         </table>
