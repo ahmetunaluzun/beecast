@@ -197,7 +197,7 @@ h2 { font: 800 clamp(32px, 5vw, 52px)/1 var(--display); letter-spacing: -0.03em;
 .dl__tag { display: inline-block; color: var(--honey); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; font-size: 13px; }
 .dl__card--off .dl__tag { color: var(--ash); }
 .dl__btn { display: inline-block; background: var(--honey); color: var(--ink); border-radius: 999px; padding: 12px 26px; font: 800 19px/1.2 var(--display); text-decoration: none; }
-.dl__btn:hover, .dl__btn:focus-visible { background: var(--wax); }
+.dl__btn:hover, .dl__btn:focus-visible { background: var(--wax); color: var(--ink); }
 .dl__card .dl__small { margin: 12px 0 0; font-size: 14px; }
 .vid { margin: 18px 0 8px; max-width: 320px; }
 .vid video { display: block; width: 100%; height: auto; border-radius: 18px; border: 1px solid var(--hive-2); background: var(--hive); }
@@ -205,3 +205,4 @@ h2 { font: 800 clamp(32px, 5vw, 52px)/1 var(--display); letter-spacing: -0.03em;
 .hash { word-break: break-all; font-size: 13px; }
 .where li .now a { color: inherit; }
 .doc code { overflow-wrap: anywhere; word-break: break-word; }
+.hero__cta { margin: 20px 0 0; }
