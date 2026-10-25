@@ -22,7 +22,7 @@
 
     <main id="content" class="doc">
       <h1>Privacy policy</h1>
-      <p class="meta">Version 1.3.0 · Effective 25 October 2026 · Covers every version of the Bee Cast app and this site</p>
+      <p class="meta">Version 1.4.0 · Effective 25 October 2026 · Covers every version of the Bee Cast app and this site</p>
 
       <div class="short">
         <p>In short: Bee Cast collects no data from you and sends nothing to us.</p>
@@ -41,8 +41,8 @@
       <p>To work, the app keeps the following in its own storage on your device:</p>
       <ul>
         <li>The playlist details you add: playlist URL, server address, username, password, MAC address and programme guide URL.</li>
-        <li>Channel, movie, series and programme lists downloaded from your provider, so they don't have to be downloaded on every launch.</li>
-        <li>Your favourites, watch history and where you stopped in a movie or episode. If you create profiles, these are kept separately for each profile.</li>
+        <li>Channel, movie, series and programme lists downloaded from your provider, so they don't have to be downloaded on every launch. When you filter movies by genre, the movie genres asked from your provider are stored too.</li>
+        <li>Your favourites, watch history and where you stopped in a movie or episode. The history also keeps how many times and at what times of day you opened something; the "You usually watch at this time", "Watched often" and "Based on what you watched" suggestions are worked out from it on this device and are never sent anywhere. If you create profiles, these are kept separately for each profile.</li>
         <li>The name and colour of the profiles you create, whether each is a kids profile, and which profile was last chosen on this device.</li>
         <li>Your settings: language, look, text size, audio and subtitle preferences, parental lock PIN.</li>
         <li>A device code generated on the device for MAC portals.</li>
@@ -61,6 +61,7 @@
       <h2>What the app connects to</h2>
       <p>Bee Cast only connects to addresses you enter: your playlist or provider server, the programme guide URL and the streams you play. If you use Back up and move, it also connects your phone and TV over your home's local network. Like any internet connection, these servers see your device's IP address and the app's user agent. Your provider handles that data under its own terms; check its privacy policy.</p>
       <p>The maker of your TV or phone (for example Samsung or Google) and the app store may collect their own data about device and store use under their own policies. That is outside our control.</p>
+      <p>Casting (Android phone and tablet): when you tap the cast button in the player, the app uses the Google Cast feature of Google Play services to look for Chromecast and Google TV devices on the same local network. If you pick a device, the stream address (depending on your provider, it may contain your username and password), the title and where you stopped in a movie are sent to that device; the device then opens the stream from your provider itself. Discovery and the connection are handled by Google Play services, and Google processes this under its own privacy policy. If you don't use casting, none of this happens; nothing reaches us.</p>
       <p>If you get the Android version from the Download page on this site, the file is downloaded from GitHub (GitHub, Inc.); GitHub processes data about that download (such as your IP address) under its own privacy policy. We receive no information from that download.</p>
 
       <h2>This site</h2>
@@ -80,6 +81,9 @@
         <table>
           <thead><tr><th>Version</th><th>Date</th><th>Changed section</th><th>Old value</th><th>New value</th><th>Reason</th></tr></thead>
           <tbody>
+            <tr><td>1.4.0</td><td>2026-10-25</td><td>What the app connects to</td><td>—</td><td>Casting: stream address, title and resume point go to the chosen Chromecast/Google TV device; Google Play services</td><td>New feature: casting</td></tr>
+            <tr><td>1.4.0</td><td>2026-10-25</td><td>What is stored on your device</td><td>Favourites, watch history and resume points</td><td>Watch counts and times of day are kept too; suggestions are worked out on the device and not sent</td><td>New feature: on-device suggestions</td></tr>
+            <tr><td>1.4.0</td><td>2026-10-25</td><td>What is stored on your device</td><td>Channel, movie, series and programme lists</td><td>Movie genres asked from the provider are stored too</td><td>New feature: filter movies by genre</td></tr>
             <tr><td>1.3.0</td><td>2026-10-25</td><td>What is stored on your device</td><td>Favourites, watch history and resume points</td><td>Profiles added (name, colour, kids profile, last chosen); records kept per profile</td><td>New feature: profiles</td></tr>
             <tr><td>1.3.0</td><td>2026-10-25</td><td>Backup and moving</td><td>Playlists, favourites, watch history, settings, recent searches</td><td>Profiles are included; the chosen profile is not</td><td>New feature: profiles</td></tr>
             <tr><td>1.3.0</td><td>2026-10-25</td><td>Children</td><td>Only the provider's adult flag</td><td>Kids profile also hides adult-named categories; the limit is stated</td><td>New feature: kids profile</td></tr>

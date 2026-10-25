@@ -22,7 +22,7 @@
 
     <main id="icerik" class="doc">
       <h1>Gizlilik politikası</h1>
-      <p class="meta">Sürüm 1.3.0 · Yürürlük: 25 Ekim 2026 · Kapsam: Bee Cast uygulamasının tüm sürümleri ve bu site</p>
+      <p class="meta">Sürüm 1.4.0 · Yürürlük: 25 Ekim 2026 · Kapsam: Bee Cast uygulamasının tüm sürümleri ve bu site</p>
 
       <div class="short">
         <p>Kısaca: Bee Cast senden hiçbir veri toplamaz ve bize hiçbir şey göndermez.</p>
@@ -41,8 +41,8 @@
       <p>Uygulamanın çalışması için şu bilgiler cihazın uygulama deposunda tutulur:</p>
       <ul>
         <li>Eklediğin playlist bilgileri: liste adresi, sunucu adresi, kullanıcı adı, şifre, MAC adresi ve program rehberi adresi.</li>
-        <li>Sağlayıcıdan indirilen kanal, film, dizi ve program listeleri (her açılışta yeniden indirilmesin diye).</li>
-        <li>Favorilerin, izleme geçmişin ve bir filmde ya da bölümde kaldığın yer. Profil oluşturduysan bunlar her profil için ayrı tutulur.</li>
+        <li>Sağlayıcıdan indirilen kanal, film, dizi ve program listeleri (her açılışta yeniden indirilmesin diye). Film türüne göre süzmek istediğinde sağlayıcıdan sorulan film türleri de saklanır.</li>
+        <li>Favorilerin, izleme geçmişin ve bir filmde ya da bölümde kaldığın yer. Geçmişte bir içeriği kaç kez ve günün hangi saatlerinde açtığın da tutulur; "Bu saatte genelde izledikleriniz", "Sık izlenenler" ve "İzlediklerinize göre" önerileri bununla bu cihazda hesaplanır, hiçbir yere gönderilmez. Profil oluşturduysan bunlar her profil için ayrı tutulur.</li>
         <li>Oluşturduğun profillerin adı, rengi ve çocuk profili olup olmadığı; bu cihazda en son hangi profilin seçildiği.</li>
         <li>Ayarların: dil, görünüm, yazı boyutu, ses ve altyazı tercihleri, ebeveyn kilidi PIN'i.</li>
         <li>MAC portalı için cihazda üretilen cihaz kodu.</li>
@@ -61,6 +61,7 @@
       <h2>Uygulamanın bağlandığı yerler</h2>
       <p>Bee Cast yalnız senin girdiğin adreslere bağlanır: playlist ya da sağlayıcı sunucusu, program rehberi adresi ve oynattığın yayınlar. Yedekle ve taşı'yı kullanırsan ayrıca evindeki yerel ağda telefonunla TV'n arasında bağlantı kurulur. Bu sunucular, her internet bağlantısında olduğu gibi, cihazının IP adresini ve uygulamanın tarayıcı kimliğini (User-Agent) görür. Bu verileri sağlayıcın kendi koşullarına göre işler; onun gizlilik politikasına bakmalısın.</p>
       <p>Televizyonun ya da telefonun üreticisi (örneğin Samsung, Google) ve uygulama mağazası, cihaz ve mağaza kullanımıyla ilgili kendi verilerini kendi politikalarına göre toplayabilir. Bunlar bizim denetimimizde değildir.</p>
+      <p>Yansıtma (Android telefon ve tablet): oynatıcıdaki yansıtma düğmesine dokunduğunda uygulama, Google Play Hizmetleri'nin Google Cast özelliğiyle aynı yerel ağdaki Chromecast ve Google TV cihazlarını arar. Bir cihaz seçersen o cihaza yayının adresi (sağlayıcına göre adreste kullanıcı adın ve şifren bulunabilir), içeriğin adı ve filmde kaldığın yer gönderilir; yayını o cihaz sağlayıcından kendisi açar. Arama ve bağlantıyı Google Play Hizmetleri yürütür, Google bunu kendi gizlilik politikasına göre işler. Yansıtmayı kullanmazsan bunların hiçbiri olmaz; bize bir şey gelmez.</p>
       <p>Android sürümünü bu sitedeki İndir sayfasından alırsan dosya GitHub'dan (GitHub, Inc.) indirilir; GitHub bu indirmeyle ilgili verileri (ör. IP adresi) kendi gizlilik politikasına göre işler. Bu indirmeden bize bir bilgi gelmez.</p>
 
       <h2>Bu site</h2>
@@ -80,6 +81,9 @@
         <table>
           <thead><tr><th>Sürüm</th><th>Tarih</th><th>Değişen alan</th><th>Eski değer</th><th>Yeni değer</th><th>Neden</th></tr></thead>
           <tbody>
+            <tr><td>1.4.0</td><td>25.10.2026</td><td>Uygulamanın bağlandığı yerler</td><td>—</td><td>Yansıtma: seçilen Chromecast/Google TV cihazına yayın adresi, ad ve kalınan yer gider; Google Play Hizmetleri</td><td>Yeni özellik: yansıtma</td></tr>
+            <tr><td>1.4.0</td><td>25.10.2026</td><td>Cihazında saklananlar</td><td>Favoriler, izleme geçmişi ve kalınan yer</td><td>İzleme sayısı ve saatleri de tutulur; öneriler cihazda hesaplanır, gönderilmez</td><td>Yeni özellik: cihazda öneri</td></tr>
+            <tr><td>1.4.0</td><td>25.10.2026</td><td>Cihazında saklananlar</td><td>Kanal, film, dizi ve program listeleri</td><td>Sağlayıcıdan sorulan film türleri de saklanır</td><td>Yeni özellik: film türüne göre süzme</td></tr>
             <tr><td>1.3.0</td><td>25.10.2026</td><td>Cihazında saklananlar</td><td>Favoriler, izleme geçmişi ve kalınan yer</td><td>Profiller (ad, renk, çocuk profili, son seçilen) eklendi; kayıtlar profile göre ayrı</td><td>Yeni özellik: profiller</td></tr>
             <tr><td>1.3.0</td><td>25.10.2026</td><td>Yedekleme ve taşıma</td><td>Playlist, favoriler, izleme geçmişi, ayarlar, son aramalar</td><td>Profiller de yedeğe girer; seçili profil girmez</td><td>Yeni özellik: profiller</td></tr>
             <tr><td>1.3.0</td><td>25.10.2026</td><td>Çocuklar</td><td>Yalnız sağlayıcının yetişkin işareti</td><td>Çocuk profilinde yetişkin adlı kategoriler de gizlenir; sınırı yazıldı</td><td>Yeni özellik: çocuk profili</td></tr>
