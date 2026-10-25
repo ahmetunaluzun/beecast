@@ -22,7 +22,7 @@
 
     <main id="content" class="doc">
       <h1>Privacy policy</h1>
-      <p class="meta">Version 1.2.0 · Effective 25 October 2026 · Covers every version of the Bee Cast app and this site</p>
+      <p class="meta">Version 1.3.0 · Effective 25 October 2026 · Covers every version of the Bee Cast app and this site</p>
 
       <div class="short">
         <p>In short: Bee Cast collects no data from you and sends nothing to us.</p>
@@ -42,14 +42,15 @@
       <ul>
         <li>The playlist details you add: playlist URL, server address, username, password, MAC address and programme guide URL.</li>
         <li>Channel, movie, series and programme lists downloaded from your provider, so they don't have to be downloaded on every launch.</li>
-        <li>Your favourites, watch history and where you stopped in a movie or episode.</li>
+        <li>Your favourites, watch history and where you stopped in a movie or episode. If you create profiles, these are kept separately for each profile.</li>
+        <li>The name and colour of the profiles you create, whether each is a kids profile, and which profile was last chosen on this device.</li>
         <li>Your settings: language, look, text size, audio and subtitle preferences, parental lock PIN.</li>
         <li>A device code generated on the device for MAC portals.</li>
       </ul>
-      <p>None of this is sent to us. It only leaves your device if you back it up yourself (see Backup and moving below). Deleting a playlist in Settings also deletes its channels, movies, series, favourites and watch history. Uninstalling the app deletes everything.</p>
+      <p>None of this is sent to us. It only leaves your device if you back it up yourself (see Backup and moving below). Deleting a playlist in Settings also deletes its channels, movies, series, favourites and watch history. Deleting a profile deletes that profile's favourites and watch history. Uninstalling the app deletes everything.</p>
 
       <h2 id="backup">Backup and moving</h2>
-      <p>Settings › Back up and move only runs when you start it. A backup contains your playlist details (including passwords), favourites, watch history, settings and recent searches. The MAC device code is included only if you choose. Channel and movie lists are not included.</p>
+      <p>Settings › Back up and move only runs when you start it. A backup contains your playlist details (including passwords), profiles, favourites, watch history, settings and recent searches. The profile chosen on this device is not included. The MAC device code is included only if you choose. Channel and movie lists are not included.</p>
       <ul>
         <li>Backup file: encrypted with a password you choose. You decide where to send the file (email, Drive and so on); it never reaches us. Without the password the file can't be opened; if you forget it, we can't open it either.</li>
         <li>Moving between phone and TV: when you tap "Open TV connection" on the phone, it accepts connections only from devices on the same local network (your home Wi-Fi) and closes the connection when you leave that screen. The TV scans its own local network to find the phone. Nothing is transferred until you confirm on the phone the code shown on both screens, and the data sent is encrypted. Nothing goes to the internet or to us.</li>
@@ -66,7 +67,7 @@
       <p>This site is hosted on GitHub Pages. It uses no cookies, no analytics and no external fonts. GitHub may log visitors' IP addresses for security when serving the site (GitHub Privacy Statement).</p>
 
       <h2>Children</h2>
-      <p>Bee Cast collects no personal data, so it collects none from children either. You can hide adult content with the parental lock; it applies to content your provider marks as adult.</p>
+      <p>Bee Cast collects no personal data, so it collects none from children either. You can hide adult content with the parental lock; it applies to content your provider marks as adult. A kids profile also hides categories whose name clearly says XXX, 18+, Adult or similar; content your provider doesn't mark and whose category name doesn't say so may still appear.</p>
 
       <h2>Changes</h2>
       <p>If a feature that sends data or stores new data is added, this page will be updated beforehand and the change recorded in the version history below.</p>
@@ -79,6 +80,9 @@
         <table>
           <thead><tr><th>Version</th><th>Date</th><th>Changed section</th><th>Old value</th><th>New value</th><th>Reason</th></tr></thead>
           <tbody>
+            <tr><td>1.3.0</td><td>2026-10-25</td><td>What is stored on your device</td><td>Favourites, watch history and resume points</td><td>Profiles added (name, colour, kids profile, last chosen); records kept per profile</td><td>New feature: profiles</td></tr>
+            <tr><td>1.3.0</td><td>2026-10-25</td><td>Backup and moving</td><td>Playlists, favourites, watch history, settings, recent searches</td><td>Profiles are included; the chosen profile is not</td><td>New feature: profiles</td></tr>
+            <tr><td>1.3.0</td><td>2026-10-25</td><td>Children</td><td>Only the provider's adult flag</td><td>Kids profile also hides adult-named categories; the limit is stated</td><td>New feature: kids profile</td></tr>
             <tr><td>1.2.0</td><td>2026-10-25</td><td>Third parties</td><td>—</td><td>Added that the Android file is downloaded from GitHub, which processes data under its own policy</td><td>The Android beta became downloadable from the site</td></tr>
             <tr><td>1.1.0</td><td>2026-10-24</td><td>Backup and moving</td><td>—</td><td>New section: backup file, local network transfer between phone and TV, backups kept on the phone</td><td>New feature: Back up and move</td></tr>
             <tr><td>1.1.0</td><td>2026-10-24</td><td>What is stored on your device</td><td>"None of this leaves your device…"</td><td>"It only leaves your device if you back it up yourself…"</td><td>New feature: Back up and move</td></tr>

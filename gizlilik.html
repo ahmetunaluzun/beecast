@@ -22,7 +22,7 @@
 
     <main id="icerik" class="doc">
       <h1>Gizlilik politikası</h1>
-      <p class="meta">Sürüm 1.2.0 · Yürürlük: 25 Ekim 2026 · Kapsam: Bee Cast uygulamasının tüm sürümleri ve bu site</p>
+      <p class="meta">Sürüm 1.3.0 · Yürürlük: 25 Ekim 2026 · Kapsam: Bee Cast uygulamasının tüm sürümleri ve bu site</p>
 
       <div class="short">
         <p>Kısaca: Bee Cast senden hiçbir veri toplamaz ve bize hiçbir şey göndermez.</p>
@@ -42,14 +42,15 @@
       <ul>
         <li>Eklediğin playlist bilgileri: liste adresi, sunucu adresi, kullanıcı adı, şifre, MAC adresi ve program rehberi adresi.</li>
         <li>Sağlayıcıdan indirilen kanal, film, dizi ve program listeleri (her açılışta yeniden indirilmesin diye).</li>
-        <li>Favorilerin, izleme geçmişin ve bir filmde ya da bölümde kaldığın yer.</li>
+        <li>Favorilerin, izleme geçmişin ve bir filmde ya da bölümde kaldığın yer. Profil oluşturduysan bunlar her profil için ayrı tutulur.</li>
+        <li>Oluşturduğun profillerin adı, rengi ve çocuk profili olup olmadığı; bu cihazda en son hangi profilin seçildiği.</li>
         <li>Ayarların: dil, görünüm, yazı boyutu, ses ve altyazı tercihleri, ebeveyn kilidi PIN'i.</li>
         <li>MAC portalı için cihazda üretilen cihaz kodu.</li>
       </ul>
-      <p>Bu bilgiler bize gönderilmez. Cihazın dışına yalnız sen yedeklersen çıkar (aşağıda: Yedekleme ve taşıma). Ayarlar'dan bir playlist'i sildiğinde o listeye ait kanal, film, dizi, favori ve izleme geçmişi de silinir. Uygulamayı kaldırdığında hepsi silinir.</p>
+      <p>Bu bilgiler bize gönderilmez. Cihazın dışına yalnız sen yedeklersen çıkar (aşağıda: Yedekleme ve taşıma). Ayarlar'dan bir playlist'i sildiğinde o listeye ait kanal, film, dizi, favori ve izleme geçmişi de silinir. Bir profili sildiğinde o profilin favorileri ve izleme geçmişi silinir. Uygulamayı kaldırdığında hepsi silinir.</p>
 
       <h2 id="yedekleme">Yedekleme ve taşıma</h2>
-      <p>Ayarlar › Yedekle ve taşı yalnız sen başlattığında çalışır. Yedekte playlist bilgilerin (şifre dahil), favorilerin, izleme geçmişin, ayarların ve son aramaların bulunur. MAC cihaz kodu yalnız sen seçersen eklenir. Kanal ve film listeleri yedeğe girmez.</p>
+      <p>Ayarlar › Yedekle ve taşı yalnız sen başlattığında çalışır. Yedekte playlist bilgilerin (şifre dahil), profillerin, favorilerin, izleme geçmişin, ayarların ve son aramaların bulunur. Bu cihazda seçili profil yedeğe girmez. MAC cihaz kodu yalnız sen seçersen eklenir. Kanal ve film listeleri yedeğe girmez.</p>
       <ul>
         <li>Yedek dosyası: senin belirlediğin şifreyle şifrelenir. Dosyayı nereye göndereceğini (mail, Drive vb.) sen seçersin; dosya bize gelmez. Şifreyi bilmeyen dosyayı açamaz; şifreyi unutursan biz de açamayız.</li>
         <li>Telefon ile TV arasında taşıma: telefonda "TV bağlantısını aç" dediğinde telefon yalnız aynı yerel ağdaki (evindeki Wi-Fi) cihazlardan bağlantı kabul eder ve bu ekrandan çıkınca bağlantıyı kapatır. TV telefonu bulmak için kendi yerel ağını tarar. Aktarım, iki ekranda görünen kodu telefonda onaylamadan başlamaz ve aktarılan veri şifrelidir. İnternete ya da bize hiçbir şey gitmez.</li>
@@ -66,7 +67,7 @@
       <p>Bu site GitHub Pages üzerinde yayınlanır. Çerez, analitik ve dış yazı tipi kullanmaz. GitHub, siteyi sunarken ziyaretçinin IP adresini güvenlik amacıyla kaydedebilir (GitHub Gizlilik Bildirimi).</p>
 
       <h2>Çocuklar</h2>
-      <p>Bee Cast kişisel veri toplamadığı için çocuklardan da veri toplamaz. Yetişkin içeriği ebeveyn kilidiyle gizleyebilirsin; bu, sağlayıcının yetişkin olarak işaretlediği içerik için çalışır.</p>
+      <p>Bee Cast kişisel veri toplamadığı için çocuklardan da veri toplamaz. Yetişkin içeriği ebeveyn kilidiyle gizleyebilirsin; bu, sağlayıcının yetişkin olarak işaretlediği içerik için çalışır. Çocuk profilinde ayrıca adında XXX, 18+, Yetişkin gibi açık ifadeler geçen kategoriler gizlenir; sağlayıcı işaretlemediyse ve adı bunları içermiyorsa içerik görünebilir.</p>
 
       <h2>Değişiklikler</h2>
       <p>Uygulamaya veri gönderen ya da yeni veri saklayan bir özellik eklenirse bu sayfa önceden güncellenir ve değişiklik aşağıdaki sürüm geçmişine yazılır.</p>
@@ -79,6 +80,9 @@
         <table>
           <thead><tr><th>Sürüm</th><th>Tarih</th><th>Değişen alan</th><th>Eski değer</th><th>Yeni değer</th><th>Neden</th></tr></thead>
           <tbody>
+            <tr><td>1.3.0</td><td>25.10.2026</td><td>Cihazında saklananlar</td><td>Favoriler, izleme geçmişi ve kalınan yer</td><td>Profiller (ad, renk, çocuk profili, son seçilen) eklendi; kayıtlar profile göre ayrı</td><td>Yeni özellik: profiller</td></tr>
+            <tr><td>1.3.0</td><td>25.10.2026</td><td>Yedekleme ve taşıma</td><td>Playlist, favoriler, izleme geçmişi, ayarlar, son aramalar</td><td>Profiller de yedeğe girer; seçili profil girmez</td><td>Yeni özellik: profiller</td></tr>
+            <tr><td>1.3.0</td><td>25.10.2026</td><td>Çocuklar</td><td>Yalnız sağlayıcının yetişkin işareti</td><td>Çocuk profilinde yetişkin adlı kategoriler de gizlenir; sınırı yazıldı</td><td>Yeni özellik: çocuk profili</td></tr>
             <tr><td>1.2.0</td><td>25.10.2026</td><td>Üçüncü taraflar</td><td>—</td><td>Android dosyasının GitHub'dan indirildiği ve GitHub'ın kendi politikasıyla veri işlediği eklendi</td><td>Android deneme sürümü siteden indirilebilir oldu</td></tr>
             <tr><td>1.1.0</td><td>24.10.2026</td><td>Yedekleme ve taşıma</td><td>—</td><td>Yeni bölüm: yedek dosyası, telefon ile TV arasında yerel ağ aktarımı, telefonda saklanan yedekler</td><td>Yeni özellik: Yedekle ve taşı</td></tr>
             <tr><td>1.1.0</td><td>24.10.2026</td><td>Cihazında saklananlar</td><td>"Bu bilgiler cihazdan dışarı aktarılmaz…"</td><td>"Cihazın dışına yalnız sen yedeklersen çıkar…"</td><td>Yeni özellik: Yedekle ve taşı</td></tr>
