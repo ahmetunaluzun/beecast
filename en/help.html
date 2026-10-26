@@ -22,7 +22,7 @@
 
     <main id="content" class="doc doc--wide">
       <h1>Help</h1>
-      <p class="meta">App version 0.3.0 · Updated 24 October 2026</p>
+      <p class="meta">App version after 0.5.0 (next release) · Updated 26 October 2026</p>
 
       <nav class="toc" aria-label="On this page">
         <a href="#tv-to-phone">Get your TV's list on your phone</a>
@@ -39,7 +39,7 @@
           <ul>
             <li><b>The phone and the TV on the same home network.</b> Both connected to the same router. Don't use a guest network: devices on a guest network can't see each other.</li>
             <li><b>Bee Cast on both.</b> On the phone you need the Android version.</li>
-            <li><b>The Back up and move screen open on the phone.</b> The phone only accepts the connection while this screen is open. It closes when you leave the screen or after 5 minutes without activity.</li>
+            <li><b>The My devices screen open on the phone.</b> The phone only accepts the connection while this screen is open. It closes when you leave the screen or after 5 minutes without activity.</li>
             <li><b>Android 17 and later:</b> the phone asks for "local network" access. Without it the TV can't find the phone.</li>
           </ul>
         </div>
@@ -55,22 +55,22 @@
           <li>
             <div class="steps__text">
               <h3>Open the connection on the phone</h3>
-              <p>Open Bee Cast, tap the gear at the top right (Settings) and choose <b>Back up and move</b>. Tap <b>Open TV connection</b>.</p>
+              <p>Open Bee Cast, tap the gear at the top right (Settings) and choose <b>My devices</b>. Tap <b>Open connection</b>.</p>
               <p>Below it you'll see "Open · number …". Note the number; you'll type it with the remote if the TV can't find the phone.</p>
             </div>
             <div class="shots">
-              <figure class="shot shot--phone"><img src="../assets/img/help/phone-1-back-up-and-move.webp" width="540" height="1098" alt="Phone: Settings, Back up and move screen with the Open TV connection button." loading="lazy"><figcaption>Before</figcaption></figure>
+              <figure class="shot shot--phone"><img src="../assets/img/help/phone-1-back-up-and-move.webp" width="540" height="1098" alt="Phone: Settings, My devices screen with the Open connection button." loading="lazy"><figcaption>Before</figcaption></figure>
               <figure class="shot shot--phone"><img src="../assets/img/help/phone-2-connection-open.webp" width="540" height="1098" alt="Connection open: Open, number 42." loading="lazy"><figcaption>Connection open</figcaption></figure>
             </div>
           </li>
           <li>
             <div class="steps__text">
               <h3>On the TV, Back up to phone</h3>
-              <p>With the remote go to Settings › <b>Back up and move</b> and press <b>Back up to phone</b>. The TV looks for the phone on your home network; if the phone is open it usually finds it within 2 seconds.</p>
+              <p>With the remote go to Settings › <b>My devices</b> and press <b>Back up to phone</b>. The TV looks for the phone on your home network; if the phone is open it usually finds it within 2 seconds.</p>
               <p>If it can't find the phone (after about 6 seconds) it asks for the number shown on the phone. Type it and press <b>Connect</b>.</p>
             </div>
             <div class="shots">
-              <figure class="shot"><img src="../assets/img/help/tv-1-back-up-and-move.webp" width="1280" height="720" alt="TV: Settings, Back up and move with Back up to phone selected." loading="lazy"><figcaption>Settings › Back up and move</figcaption></figure>
+              <figure class="shot"><img src="../assets/img/help/tv-1-back-up-and-move.webp" width="1280" height="720" alt="TV: Settings, My devices with Back up to phone selected." loading="lazy"><figcaption>Settings › My devices</figcaption></figure>
             </div>
           </li>
           <li>
@@ -114,13 +114,13 @@
           <li>
             <div class="steps__text">
               <h3>Open the connection on the phone</h3>
-              <p>Settings › Back up and move › <b>Open TV connection</b> (step 1 above).</p>
+              <p>Settings › My devices › <b>Open connection</b> (step 1 above).</p>
             </div>
           </li>
           <li>
             <div class="steps__text">
               <h3>On the TV, Restore from phone</h3>
-              <p>On the TV go to Settings › Back up and move and press <b>Restore from phone</b>. When the code appears, tap <b>Yes, same</b> on the phone.</p>
+              <p>On the TV go to Settings › My devices and press <b>Restore from phone</b>. When the code appears, tap <b>Yes, same</b> on the phone.</p>
             </div>
             <div class="shots">
               <figure class="shot"><img src="../assets/img/help/tv-5-restore-code.webp" width="1160" height="500" alt="TV: Confirm this code on Galaxy A54." loading="lazy"></figure>
@@ -157,11 +157,33 @@
         <p>The phone keeps up to the last 3 backups from each TV. Remove the ones you don't need with <b>Delete</b> on the phone.</p>
       </section>
 
+      <section id="phone-tablet" aria-labelledby="h-pt">
+        <h2 id="h-pt">From a phone to a tablet (or another phone)</h2>
+        <p>Both devices must be on the same Wi-Fi network.</p>
+        <ol class="plain">
+          <li>On the device that has your list: Settings › My devices › <b>Open connection</b>.</li>
+          <li>On the new device: Settings › My devices › <b>Load from another device</b>. If no device is found, type the number shown on the other device.</li>
+          <li>The same code appears on both screens; tap <b>Yes, same</b> on the device that has your list.</li>
+          <li>On the new device choose what to load and tap <b>Load</b>.</li>
+        </ol>
+      </section>
+
+      <section id="drive" aria-labelledby="h-dr">
+        <h2 id="h-dr">To a new device with Google Drive</h2>
+        <p>No shared Wi-Fi needed. Sync carries resume points and favourites; for playlists, an encrypted backup is put on Drive.</p>
+        <ol class="plain">
+          <li>On the device that has your list: Settings › My devices › <b>Connect Google Drive</b> and approve the code in your Google account.</li>
+          <li>In the same place, <b>Back up to Drive</b>: type a backup password (at least 6 characters) twice. <b>If you forget it, the backup can't be opened, not even by us.</b></li>
+          <li>On the new device, choose <b>Get from my other device</b> at first start (or Settings › My devices) and connect Google Drive.</li>
+          <li>The app finds the backup and asks for the password. Once you type it, the playlists arrive and sync turns on by itself.</li>
+        </ol>
+      </section>
+
       <section id="file" aria-labelledby="h-file">
         <h2 id="h-file">Backup file (phone, tablet, computer)</h2>
         <p>To keep a copy without the network, or to move to another phone. The TV doesn't work with files; for the TV use the ways above.</p>
         <ol class="plain">
-          <li>Settings › Back up and move › <b>Share backup</b> (on a computer, <b>Save backup to file</b>).</li>
+          <li>Settings › My devices › <b>Share backup</b> (on a computer, <b>Save backup to file</b>).</li>
           <li>Type a backup password (at least 6 characters) twice. The file includes your playlist passwords and can't be opened without it. <b>If you forget the password the backup can't be opened, not even by us.</b></li>
           <li>Email the file to yourself or put it on Drive. The file never reaches us.</li>
           <li>On the new device: <b>Restore from file</b> › <b>Choose file</b> › type the password.</li>
@@ -172,9 +194,9 @@
         <h2 id="h-pr">If it doesn't work</h2>
         <dl class="faq">
           <dt>The TV says "Phone not found".</dt>
-          <dd>Check that Back up and move is open on the phone and shows "Open · number …". Type the phone's number on the TV. If it still fails, check that both are on the same Wi-Fi (not a guest network).</dd>
+          <dd>Check that My devices is open on the phone and shows "Open · number …". Type the phone's number on the TV. If it still fails, check that both are on the same Wi-Fi (not a guest network).</dd>
           <dt>"Couldn't reach the phone."</dt>
-          <dd>The phone's screen may have turned off or another app may be in front. Open Bee Cast on the Back up and move screen and try again.</dd>
+          <dd>The phone's screen may have turned off or another app may be in front. Open Bee Cast on the My devices screen and try again.</dd>
           <dt>"The connection expired."</dt>
           <dd>Nothing happened for 5 minutes. Start again on the TV; if the connection closed on the phone, open it again.</dd>
           <dt>"Local network access was denied."</dt>
@@ -189,7 +211,7 @@
       <section id="safety" aria-labelledby="h-sa">
         <h2 id="h-sa">Is it safe?</h2>
         <ul>
-          <li>The phone only accepts the connection while Back up and move is open; it closes when you leave the screen.</li>
+          <li>The phone only accepts the connection while My devices is open; it closes when you leave the screen.</li>
           <li>Nothing moves until the code is confirmed on the phone. Matching codes mean no other device got in between.</li>
           <li>The data is encrypted and stays on your home network; nothing goes to the internet or to us.</li>
         </ul>
@@ -201,6 +223,7 @@
         <table>
           <thead><tr><th>Version</th><th>Date</th><th>Changed</th><th>Old value</th><th>New value</th><th>Why</th></tr></thead>
           <tbody>
+            <tr><td>1.1.0</td><td>2026-10-26</td><td>Section name; new guides</td><td>Settings › Back up and move; only TV ↔ phone and file</td><td>Settings › My devices; phone-to-tablet and Google Drive to a new device guides</td><td>The section was renamed in the app; new features</td></tr>
             <tr><td>1.0.0</td><td>24.10.2026</td><td>Whole page</td><td>—</td><td>First release: back up and move guide</td><td>New feature</td></tr>
           </tbody>
         </table>
