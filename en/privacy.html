@@ -22,7 +22,7 @@
 
     <main id="content" class="doc">
       <h1>Privacy policy</h1>
-      <p class="meta">Version 1.4.0 · Effective 25 October 2026 · Covers every version of the Bee Cast app and this site</p>
+      <p class="meta">Version 1.5.0 · Effective 26 October 2026 · Covers every version of the Bee Cast app and this site</p>
 
       <div class="short">
         <p>In short: Bee Cast collects no data from you and sends nothing to us.</p>
@@ -43,7 +43,9 @@
         <li>The playlist details you add: playlist URL, server address, username, password, MAC address and programme guide URL.</li>
         <li>Channel, movie, series and programme lists downloaded from your provider, so they don't have to be downloaded on every launch. When you filter movies by genre, the movie genres asked from your provider are stored too.</li>
         <li>Your favourites, watch history and where you stopped in a movie or episode. The history also keeps how many times and at what times of day you opened something; the "You usually watch at this time", "Watched often" and "Based on what you watched" suggestions are worked out from it on this device and are never sent anywhere. If you create profiles, these are kept separately for each profile.</li>
-        <li>The name and colour of the profiles you create, whether each is a kids profile, and which profile was last chosen on this device.</li>
+        <li>The name and colour of the profiles you create, whether each is a kids profile and the kids profile's age band (0–6, 7–12, 13–15), and which profile was last chosen on this device.</li>
+        <li>The name and stream address of radios you add in Settings › Radio.</li>
+        <li>If you turn on phone sync: on the TV, the paired phone's local network address, name and sync key; on the phone, the paired TVs' names, sync keys and last sync time. A record of favourites you remove is also kept for 90 days (so a removed favourite does not come back from the other device when syncing).</li>
         <li>Your settings: language, look, text size, audio and subtitle preferences, parental lock PIN.</li>
         <li>A device code generated on the device for MAC portals.</li>
       </ul>
@@ -53,13 +55,14 @@
       <p>Settings › Back up and move only runs when you start it. A backup contains your playlist details (including passwords), profiles, favourites, watch history, settings and recent searches. The profile chosen on this device is not included. The MAC device code is included only if you choose. Channel and movie lists are not included.</p>
       <ul>
         <li>Backup file: encrypted with a password you choose. You decide where to send the file (email, Drive and so on); it never reaches us. Without the password the file can't be opened; if you forget it, we can't open it either.</li>
-        <li>Moving between phone and TV: when you tap "Open TV connection" on the phone, it accepts connections only from devices on the same local network (your home Wi-Fi) and closes the connection when you leave that screen. The TV scans its own local network to find the phone. Nothing is transferred until you confirm on the phone the code shown on both screens, and the data sent is encrypted. Nothing goes to the internet or to us.</li>
+        <li>Moving between phone and TV: when you tap "Open TV connection" on the phone, it accepts connections only from devices on the same local network (your home Wi-Fi) and closes the connection when you leave that screen (if phone sync is on, see below). The TV scans its own local network to find the phone. Nothing is transferred until you confirm on the phone the code shown on both screens, and the data sent is encrypted. Nothing goes to the internet or to us.</li>
+        <li id="sync">Phone sync (only if you turn it on): on the TV, Settings › Back up and move › Sync with phone pairs once, after you confirm on the phone the code shown on both screens. Then, while the app is open (at start-up, when watching or favourites change, and every 5 minutes), the TV sends the following to the phone on the same local network and takes the phone's: profile names, colours, kids setting and age band; each profile's resume points and favourites. Titles, playlist address, username and password are not sent: content is matched by your provider's content number and the account by a one-way hash of the address and username (for M3U, a hash of the stream address). The data sent is encrypted with the key given at pairing. On a phone with synced TVs the connection stays open while the app is in the foreground and closes when it goes to the background; a new TV can pair only while the backup screen is open. Turn sync off with "Turn off sync" on the TV or "Remove sync" on the phone; your records are not deleted. Nothing goes to the internet or to us. Pairing keys are not included in backups.</li>
         <li>Backups received from TVs are kept in the app's storage on your phone (at most three per device). You can delete them in Settings › Back up and move; uninstalling the app deletes them.</li>
         <li>On Android 17 and later the phone asks for local network permission for this connection. Without it you can still back up with a file.</li>
       </ul>
 
       <h2>What the app connects to</h2>
-      <p>Bee Cast only connects to addresses you enter: your playlist or provider server, the programme guide URL and the streams you play. If you use Back up and move, it also connects your phone and TV over your home's local network. Like any internet connection, these servers see your device's IP address and the app's user agent. Your provider handles that data under its own terms; check its privacy policy.</p>
+      <p>Bee Cast only connects to addresses you enter: your playlist or provider server, the programme guide URL, radio addresses you add in Settings › Radio and the streams you play. The app ships no radio list or radio directory of its own. If you use Back up and move or phone sync, it also connects your phone and TV over your home's local network. Like any internet connection, these servers see your device's IP address and the app's user agent. Your provider handles that data under its own terms; check its privacy policy.</p>
       <p>The maker of your TV or phone (for example Samsung or Google) and the app store may collect their own data about device and store use under their own policies. That is outside our control.</p>
       <p>Casting (Android phone and tablet): when you tap the cast button in the player, the app uses the Google Cast feature of Google Play services to look for Chromecast and Google TV devices on the same local network. If you pick a device, the stream address (depending on your provider, it may contain your username and password), the title and where you stopped in a movie are sent to that device; the device then opens the stream from your provider itself. Discovery and the connection are handled by Google Play services, and Google processes this under its own privacy policy. If you don't use casting, none of this happens; nothing reaches us.</p>
       <p>If you get the Android version from the Download page on this site, the file is downloaded from GitHub (GitHub, Inc.); GitHub processes data about that download (such as your IP address) under its own privacy policy. We receive no information from that download.</p>
@@ -68,7 +71,7 @@
       <p>This site is hosted on GitHub Pages. It uses no cookies, no analytics and no external fonts. GitHub may log visitors' IP addresses for security when serving the site (GitHub Privacy Statement).</p>
 
       <h2>Children</h2>
-      <p>Bee Cast collects no personal data, so it collects none from children either. You can hide adult content with the parental lock; it applies to content your provider marks as adult. A kids profile also hides categories whose name clearly says XXX, 18+, Adult or similar; content your provider doesn't mark and whose category name doesn't say so may still appear.</p>
+      <p>Bee Cast collects no personal data, so it collects none from children either. You can hide adult content with the parental lock; it applies to content your provider marks as adult. A kids profile also hides categories whose name clearly says XXX, 18+, Adult or similar; content your provider doesn't mark and whose category name doesn't say so may still appear. If you give a kids profile an age band (0–6, 7–12, 13–15), content is also filtered by category, genre and channel name; this filtering happens on the device, relies on names and may not classify every item correctly. If you set a parental lock PIN, switching to a profile with a wider band or to a non-kids profile asks for it.</p>
 
       <h2>Changes</h2>
       <p>If a feature that sends data or stores new data is added, this page will be updated beforehand and the change recorded in the version history below.</p>
@@ -81,6 +84,10 @@
         <table>
           <thead><tr><th>Version</th><th>Date</th><th>Changed section</th><th>Old value</th><th>New value</th><th>Reason</th></tr></thead>
           <tbody>
+            <tr><td>1.5.0</td><td>2026-10-26</td><td>Backup and moving</td><td>—</td><td>Phone sync: resume points, favourites and profiles between phone and TV on the local network, by content number and account hash, encrypted</td><td>New feature: phone sync</td></tr>
+            <tr><td>1.5.0</td><td>2026-10-26</td><td>What is stored on your device</td><td>Profile name, colour and whether it is a kids profile</td><td>Kids profile age band; radios you add; sync pairings</td><td>New features: age band, your own radios, phone sync</td></tr>
+            <tr><td>1.5.0</td><td>2026-10-26</td><td>What the app connects to</td><td>Playlist/provider server, guide URL, streams</td><td>Radio addresses you add too; the app ships no radio directory</td><td>New feature: your own radios</td></tr>
+            <tr><td>1.5.0</td><td>2026-10-26</td><td>Children</td><td>Adult-marked content and clearly named categories are hidden</td><td>On-device filtering by category, genre and channel name per age band; its limits are stated</td><td>New feature: age band</td></tr>
             <tr><td>1.4.0</td><td>2026-10-25</td><td>What the app connects to</td><td>—</td><td>Casting: stream address, title and resume point go to the chosen Chromecast/Google TV device; Google Play services</td><td>New feature: casting</td></tr>
             <tr><td>1.4.0</td><td>2026-10-25</td><td>What is stored on your device</td><td>Favourites, watch history and resume points</td><td>Watch counts and times of day are kept too; suggestions are worked out on the device and not sent</td><td>New feature: on-device suggestions</td></tr>
             <tr><td>1.4.0</td><td>2026-10-25</td><td>What is stored on your device</td><td>Channel, movie, series and programme lists</td><td>Movie genres asked from the provider are stored too</td><td>New feature: filter movies by genre</td></tr>

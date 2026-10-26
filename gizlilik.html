@@ -22,7 +22,7 @@
 
     <main id="icerik" class="doc">
       <h1>Gizlilik politikası</h1>
-      <p class="meta">Sürüm 1.4.0 · Yürürlük: 25 Ekim 2026 · Kapsam: Bee Cast uygulamasının tüm sürümleri ve bu site</p>
+      <p class="meta">Sürüm 1.5.0 · Yürürlük: 26 Ekim 2026 · Kapsam: Bee Cast uygulamasının tüm sürümleri ve bu site</p>
 
       <div class="short">
         <p>Kısaca: Bee Cast senden hiçbir veri toplamaz ve bize hiçbir şey göndermez.</p>
@@ -43,7 +43,9 @@
         <li>Eklediğin playlist bilgileri: liste adresi, sunucu adresi, kullanıcı adı, şifre, MAC adresi ve program rehberi adresi.</li>
         <li>Sağlayıcıdan indirilen kanal, film, dizi ve program listeleri (her açılışta yeniden indirilmesin diye). Film türüne göre süzmek istediğinde sağlayıcıdan sorulan film türleri de saklanır.</li>
         <li>Favorilerin, izleme geçmişin ve bir filmde ya da bölümde kaldığın yer. Geçmişte bir içeriği kaç kez ve günün hangi saatlerinde açtığın da tutulur; "Bu saatte genelde izledikleriniz", "Sık izlenenler" ve "İzlediklerinize göre" önerileri bununla bu cihazda hesaplanır, hiçbir yere gönderilmez. Profil oluşturduysan bunlar her profil için ayrı tutulur.</li>
-        <li>Oluşturduğun profillerin adı, rengi ve çocuk profili olup olmadığı; bu cihazda en son hangi profilin seçildiği.</li>
+        <li>Oluşturduğun profillerin adı, rengi, çocuk profili olup olmadığı ve çocuk profilinin yaş bandı (0–6, 7–12, 13–15); bu cihazda en son hangi profilin seçildiği.</li>
+        <li>Ayarlar › Radyo'dan eklediğin radyoların adı ve yayın adresi.</li>
+        <li>Telefonla senkronu açtıysan: TV'de eşleştiği telefonun yerel ağ adresi, adı ve senkron anahtarı; telefonda eşleştiği TV'lerin adı, senkron anahtarı ve son eşitleme saati. Ayrıca sildiğin favorilerin izi 90 gün tutulur (senkronda silinen favori öbür cihazdan geri gelmesin).</li>
         <li>Ayarların: dil, görünüm, yazı boyutu, ses ve altyazı tercihleri, ebeveyn kilidi PIN'i.</li>
         <li>MAC portalı için cihazda üretilen cihaz kodu.</li>
       </ul>
@@ -53,13 +55,14 @@
       <p>Ayarlar › Yedekle ve taşı yalnız sen başlattığında çalışır. Yedekte playlist bilgilerin (şifre dahil), profillerin, favorilerin, izleme geçmişin, ayarların ve son aramaların bulunur. Bu cihazda seçili profil yedeğe girmez. MAC cihaz kodu yalnız sen seçersen eklenir. Kanal ve film listeleri yedeğe girmez.</p>
       <ul>
         <li>Yedek dosyası: senin belirlediğin şifreyle şifrelenir. Dosyayı nereye göndereceğini (mail, Drive vb.) sen seçersin; dosya bize gelmez. Şifreyi bilmeyen dosyayı açamaz; şifreyi unutursan biz de açamayız.</li>
-        <li>Telefon ile TV arasında taşıma: telefonda "TV bağlantısını aç" dediğinde telefon yalnız aynı yerel ağdaki (evindeki Wi-Fi) cihazlardan bağlantı kabul eder ve bu ekrandan çıkınca bağlantıyı kapatır. TV telefonu bulmak için kendi yerel ağını tarar. Aktarım, iki ekranda görünen kodu telefonda onaylamadan başlamaz ve aktarılan veri şifrelidir. İnternete ya da bize hiçbir şey gitmez.</li>
+        <li>Telefon ile TV arasında taşıma: telefonda "TV bağlantısını aç" dediğinde telefon yalnız aynı yerel ağdaki (evindeki Wi-Fi) cihazlardan bağlantı kabul eder ve bu ekrandan çıkınca bağlantıyı kapatır (telefonla senkron açıksa aşağıya bak). TV telefonu bulmak için kendi yerel ağını tarar. Aktarım, iki ekranda görünen kodu telefonda onaylamadan başlamaz ve aktarılan veri şifrelidir. İnternete ya da bize hiçbir şey gitmez.</li>
+        <li id="senkron">Telefonla senkron (yalnız sen açarsan): TV'de Ayarlar › Yedekle ve taşı › Telefonla senkron bir kez, iki ekranda görünen kodu telefonda onaylayarak eşleşir. Sonra TV, uygulama açıkken (açılışta, izleme ya da favori değişince ve 5 dakikada bir) aynı yerel ağdaki telefona şunları gönderir ve telefondakileri alır: profillerin adı, rengi, çocuk ayarı ve yaş bandı; her profilin izleme yeri ve favorileri. İçerik adı, playlist adresi, kullanıcı adı ve şifre gönderilmez: içerik sağlayıcının içerik numarasıyla, hesap ise adres ve kullanıcı adından üretilen geri çevrilemez bir karmayla (M3U'da yayın adresinin karmasıyla) eşlenir. Aktarılan veri eşleşmede verilen anahtarla şifrelidir. Senkronlanan TV olan telefonda bağlantı, uygulama ön plandayken açık kalır, arka plana geçince kapanır; yeni bir TV yalnız yedek ekranı açıkken eşleşebilir. Senkronu TV'de "Senkronu kapat", telefonda "Senkronu kaldır" ile kapatırsın; kayıtların silinmez. İnternete ya da bize hiçbir şey gitmez. Eşleşme anahtarları yedeğe girmez.</li>
         <li>TV'lerden gelen yedekler telefonunun uygulama deposunda saklanır (aynı cihazdan en fazla üç yedek). Ayarlar › Yedekle ve taşı'dan silebilirsin; uygulamayı kaldırınca silinir.</li>
         <li>Android 17 ve sonrasında telefon bu bağlantı için yerel ağ izni ister. İzni vermezsen yalnız dosyayla yedekleyebilirsin.</li>
       </ul>
 
       <h2>Uygulamanın bağlandığı yerler</h2>
-      <p>Bee Cast yalnız senin girdiğin adreslere bağlanır: playlist ya da sağlayıcı sunucusu, program rehberi adresi ve oynattığın yayınlar. Yedekle ve taşı'yı kullanırsan ayrıca evindeki yerel ağda telefonunla TV'n arasında bağlantı kurulur. Bu sunucular, her internet bağlantısında olduğu gibi, cihazının IP adresini ve uygulamanın tarayıcı kimliğini (User-Agent) görür. Bu verileri sağlayıcın kendi koşullarına göre işler; onun gizlilik politikasına bakmalısın.</p>
+      <p>Bee Cast yalnız senin girdiğin adreslere bağlanır: playlist ya da sağlayıcı sunucusu, program rehberi adresi, Ayarlar › Radyo'ya eklediğin radyo adresleri ve oynattığın yayınlar. Uygulama kendi radyo listesi ya da radyo dizini taşımaz. Yedekle ve taşı'yı ya da telefonla senkronu kullanırsan ayrıca evindeki yerel ağda telefonunla TV'n arasında bağlantı kurulur. Bu sunucular, her internet bağlantısında olduğu gibi, cihazının IP adresini ve uygulamanın tarayıcı kimliğini (User-Agent) görür. Bu verileri sağlayıcın kendi koşullarına göre işler; onun gizlilik politikasına bakmalısın.</p>
       <p>Televizyonun ya da telefonun üreticisi (örneğin Samsung, Google) ve uygulama mağazası, cihaz ve mağaza kullanımıyla ilgili kendi verilerini kendi politikalarına göre toplayabilir. Bunlar bizim denetimimizde değildir.</p>
       <p>Yansıtma (Android telefon ve tablet): oynatıcıdaki yansıtma düğmesine dokunduğunda uygulama, Google Play Hizmetleri'nin Google Cast özelliğiyle aynı yerel ağdaki Chromecast ve Google TV cihazlarını arar. Bir cihaz seçersen o cihaza yayının adresi (sağlayıcına göre adreste kullanıcı adın ve şifren bulunabilir), içeriğin adı ve filmde kaldığın yer gönderilir; yayını o cihaz sağlayıcından kendisi açar. Arama ve bağlantıyı Google Play Hizmetleri yürütür, Google bunu kendi gizlilik politikasına göre işler. Yansıtmayı kullanmazsan bunların hiçbiri olmaz; bize bir şey gelmez.</p>
       <p>Android sürümünü bu sitedeki İndir sayfasından alırsan dosya GitHub'dan (GitHub, Inc.) indirilir; GitHub bu indirmeyle ilgili verileri (ör. IP adresi) kendi gizlilik politikasına göre işler. Bu indirmeden bize bir bilgi gelmez.</p>
@@ -68,7 +71,7 @@
       <p>Bu site GitHub Pages üzerinde yayınlanır. Çerez, analitik ve dış yazı tipi kullanmaz. GitHub, siteyi sunarken ziyaretçinin IP adresini güvenlik amacıyla kaydedebilir (GitHub Gizlilik Bildirimi).</p>
 
       <h2>Çocuklar</h2>
-      <p>Bee Cast kişisel veri toplamadığı için çocuklardan da veri toplamaz. Yetişkin içeriği ebeveyn kilidiyle gizleyebilirsin; bu, sağlayıcının yetişkin olarak işaretlediği içerik için çalışır. Çocuk profilinde ayrıca adında XXX, 18+, Yetişkin gibi açık ifadeler geçen kategoriler gizlenir; sağlayıcı işaretlemediyse ve adı bunları içermiyorsa içerik görünebilir.</p>
+      <p>Bee Cast kişisel veri toplamadığı için çocuklardan da veri toplamaz. Yetişkin içeriği ebeveyn kilidiyle gizleyebilirsin; bu, sağlayıcının yetişkin olarak işaretlediği içerik için çalışır. Çocuk profilinde ayrıca adında XXX, 18+, Yetişkin gibi açık ifadeler geçen kategoriler gizlenir; sağlayıcı işaretlemediyse ve adı bunları içermiyorsa içerik görünebilir. Çocuk profiline yaş bandı verirsen (0–6, 7–12, 13–15) içerik ayrıca kategori, tür ve kanal adına göre süzülür; bu süzme cihazda yapılır, adlara dayanır ve her içeriği doğru sınıflandıramayabilir. Ebeveyn kilidi PIN'i belirlediysen daha geniş bantlı ya da çocuk olmayan profile geçmek PIN ister.</p>
 
       <h2>Değişiklikler</h2>
       <p>Uygulamaya veri gönderen ya da yeni veri saklayan bir özellik eklenirse bu sayfa önceden güncellenir ve değişiklik aşağıdaki sürüm geçmişine yazılır.</p>
@@ -81,6 +84,10 @@
         <table>
           <thead><tr><th>Sürüm</th><th>Tarih</th><th>Değişen alan</th><th>Eski değer</th><th>Yeni değer</th><th>Neden</th></tr></thead>
           <tbody>
+            <tr><td>1.5.0</td><td>26.10.2026</td><td>Yedekleme ve taşıma</td><td>—</td><td>Telefonla senkron: izleme yeri, favoriler ve profiller yerel ağda telefon ile TV arasında, içerik numarası ve hesap karmasıyla, şifreli</td><td>Yeni özellik: telefonla senkron</td></tr>
+            <tr><td>1.5.0</td><td>26.10.2026</td><td>Cihazında saklananlar</td><td>Profillerin adı, rengi ve çocuk profili olup olmadığı</td><td>Çocuk profilinin yaş bandı; eklenen radyolar; senkron eşleşmeleri</td><td>Yeni özellikler: yaş bandı, kendi radyoların, telefonla senkron</td></tr>
+            <tr><td>1.5.0</td><td>26.10.2026</td><td>Uygulamanın bağlandığı yerler</td><td>Playlist/sağlayıcı sunucusu, rehber adresi, yayınlar</td><td>Eklediğin radyo adresleri de; uygulama radyo dizini taşımaz</td><td>Yeni özellik: kendi radyoların</td></tr>
+            <tr><td>1.5.0</td><td>26.10.2026</td><td>Çocuklar</td><td>Yetişkin işaretli içerik ve açık adlı kategoriler gizlenir</td><td>Yaş bandına göre kategori, tür ve kanal adıyla cihazda süzme; sınırı yazıldı</td><td>Yeni özellik: yaş bandı</td></tr>
             <tr><td>1.4.0</td><td>25.10.2026</td><td>Uygulamanın bağlandığı yerler</td><td>—</td><td>Yansıtma: seçilen Chromecast/Google TV cihazına yayın adresi, ad ve kalınan yer gider; Google Play Hizmetleri</td><td>Yeni özellik: yansıtma</td></tr>
             <tr><td>1.4.0</td><td>25.10.2026</td><td>Cihazında saklananlar</td><td>Favoriler, izleme geçmişi ve kalınan yer</td><td>İzleme sayısı ve saatleri de tutulur; öneriler cihazda hesaplanır, gönderilmez</td><td>Yeni özellik: cihazda öneri</td></tr>
             <tr><td>1.4.0</td><td>25.10.2026</td><td>Cihazında saklananlar</td><td>Kanal, film, dizi ve program listeleri</td><td>Sağlayıcıdan sorulan film türleri de saklanır</td><td>Yeni özellik: film türüne göre süzme</td></tr>
