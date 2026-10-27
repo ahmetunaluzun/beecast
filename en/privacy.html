@@ -22,11 +22,11 @@
 
     <main id="content" class="doc">
       <h1>Privacy policy</h1>
-      <p class="meta">Version 1.5.0 · Effective 26 October 2026 · Covers every version of the Bee Cast app and this site</p>
+      <p class="meta">Version 1.6.0 · Effective 27 October 2026 · Covers every version of the Bee Cast app and this site</p>
 
       <div class="short">
         <p>In short: Bee Cast collects no data from you and sends nothing to us.</p>
-        <p>What you enter stays on your device. The app only connects to the IPTV provider you add and to services you turn on (such as Google Drive sync).</p>
+        <p>What you enter stays on your device. The app only connects to the IPTV provider you add, to services you turn on (such as Google Drive sync) and, in the Android version installed from this site, to the version file on this site to check for updates.</p>
       </div>
 
       <h2>What we don't collect</h2>
@@ -71,6 +71,7 @@
       <p>Casting (Android phone and tablet): when you tap the cast button in the player, the app uses the Google Cast feature of Google Play services to look for Chromecast and Google TV devices on the same local network. If you pick a device, the stream address (depending on your provider, it may contain your username and password), the title and where you stopped in a movie are sent to that device; the device then opens the stream from your provider itself. Discovery and the connection are handled by Google Play services, and Google processes this under its own privacy policy. If you don't use casting, none of this happens; nothing reaches us.</p>
       <p>Radio in the car (Android Auto, Android phone): the name, logo address and stream address of your radios (those you add in Settings › Radio and your playlist's radio channels; filtered in a kids profile) are copied into the app's storage on the phone so the car can list them even when the app is closed. While the phone is connected to a car they are listed on the car's screen; the phone opens the radio you pick from your provider itself. The name and playback state shown on the car's screen pass through Android Auto and the car; Google and the car maker handle that under their own policies. If you don't use Android Auto, the list just stays on your phone; nothing reaches us.</p>
       <p>If you get the Android version from the Download page on this site, the file is downloaded from GitHub (GitHub, Inc.); GitHub processes data about that download (such as your IP address) under its own privacy policy. We receive no information from that download.</p>
+      <p>Update check (only the Android version installed from this site): at most once a day, and when you tap "Check for updates" in Settings › About, the app reads the version file on this site (surum.json). The app sends no information in this request; like any connection, GitHub Pages sees your device's IP address. If you choose to install a new version, the file is downloaded from GitHub and you confirm the installation in Android's own window. Only the day of the last check is stored on your device; the downloaded file stays in the app's temporary folder and is deleted at the next update. Versions installed from a store (Samsung, LG, Google Play) are updated by the store and do not run this check.</p>
 
       <h2>This site</h2>
       <p>This site is hosted on GitHub Pages. It uses no cookies, no analytics and no external fonts. GitHub may log visitors' IP addresses for security when serving the site (GitHub Privacy Statement).</p>
@@ -89,6 +90,8 @@
         <table>
           <thead><tr><th>Version</th><th>Date</th><th>Changed section</th><th>Old value</th><th>New value</th><th>Reason</th></tr></thead>
           <tbody>
+            <tr><td>1.6.0</td><td>2026-10-27</td><td>In short</td><td>The provider and services you turn on</td><td>Also the version file on this site, for the update check in the Android version installed from this site</td><td>New feature: in-app update</td></tr>
+            <tr><td>1.6.0</td><td>2026-10-27</td><td>What the app connects to</td><td>—</td><td>Update check: the Android version installed from this site reads the version file on this site at most once a day and sends no information; a new version is downloaded from GitHub</td><td>New feature: in-app update</td></tr>
             <tr><td>1.5.0</td><td>2026-10-26</td><td>Backup and moving</td><td>—</td><td>Playlist backup on Drive: a second file encrypted with the backup password (beecast-yedek.json); only device name and date readable</td><td>New feature: move playlists to a new device with a single Google approval</td></tr>
             <tr><td>1.5.0</td><td>2026-10-26</td><td>Backup and moving</td><td>Local network transfer between phone and TV</td><td>Also between a phone and another phone/tablet ("Load from another device")</td><td>New feature: phones and tablets can take data from each other</td></tr>
             <tr><td>1.5.0</td><td>2026-10-26</td><td>Section and button names</td><td>Settings › Back up and move; "Open TV connection"</td><td>Settings › My devices; "Open connection"</td><td>The section was renamed in the app</td></tr>

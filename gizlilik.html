@@ -22,11 +22,11 @@
 
     <main id="icerik" class="doc">
       <h1>Gizlilik politikası</h1>
-      <p class="meta">Sürüm 1.5.0 · Yürürlük: 26 Ekim 2026 · Kapsam: Bee Cast uygulamasının tüm sürümleri ve bu site</p>
+      <p class="meta">Sürüm 1.6.0 · Yürürlük: 27 Ekim 2026 · Kapsam: Bee Cast uygulamasının tüm sürümleri ve bu site</p>
 
       <div class="short">
         <p>Kısaca: Bee Cast senden hiçbir veri toplamaz ve bize hiçbir şey göndermez.</p>
-        <p>Girdiğin bilgiler yalnız cihazında durur. Uygulama yalnız senin eklediğin IPTV sağlayıcısına ve senin açtığın hizmetlere (Google Drive ile senkron gibi) bağlanır.</p>
+        <p>Girdiğin bilgiler yalnız cihazında durur. Uygulama yalnız senin eklediğin IPTV sağlayıcısına, senin açtığın hizmetlere (Google Drive ile senkron gibi) ve siteden kurulan Android sürümünde güncelleme denetimi için bu sitedeki sürüm dosyasına bağlanır.</p>
       </div>
 
       <h2>Toplamadıklarımız</h2>
@@ -71,6 +71,7 @@
       <p>Yansıtma (Android telefon ve tablet): oynatıcıdaki yansıtma düğmesine dokunduğunda uygulama, Google Play Hizmetleri'nin Google Cast özelliğiyle aynı yerel ağdaki Chromecast ve Google TV cihazlarını arar. Bir cihaz seçersen o cihaza yayının adresi (sağlayıcına göre adreste kullanıcı adın ve şifren bulunabilir), içeriğin adı ve filmde kaldığın yer gönderilir; yayını o cihaz sağlayıcından kendisi açar. Arama ve bağlantıyı Google Play Hizmetleri yürütür, Google bunu kendi gizlilik politikasına göre işler. Yansıtmayı kullanmazsan bunların hiçbiri olmaz; bize bir şey gelmez.</p>
       <p>Arabada radyo (Android Auto, Android telefon): radyolarının (Ayarlar › Radyo'dan eklediklerin ve playlist'indeki radyo kanalları; çocuk profilinde süzülmüş haliyle) adı, logo adresi ve yayın adresi, araba uygulama kapalıyken de listeleyebilsin diye telefondaki uygulama deposuna kopyalanır. Telefonun arabaya bağlıyken arabanın ekranında listelenir; seçtiğin radyoyu telefon sağlayıcıdan kendisi açar. Arabanın ekranında gösterilen ad ve çalma durumu Android Auto ile araba üzerinden geçer; Google ve araba üreticisi bunu kendi politikalarına göre işler. Android Auto kullanmazsan liste yalnız telefonunda durur; bize bir şey gelmez.</p>
       <p>Android sürümünü bu sitedeki İndir sayfasından alırsan dosya GitHub'dan (GitHub, Inc.) indirilir; GitHub bu indirmeyle ilgili verileri (ör. IP adresi) kendi gizlilik politikasına göre işler. Bu indirmeden bize bir bilgi gelmez.</p>
+      <p>Güncelleme denetimi (yalnız bu siteden kurulan Android sürümü): uygulama günde en çok bir kez ve Ayarlar › Hakkında'da "Güncellemeleri denetle"ye bastığında bu sitedeki sürüm dosyasını (surum.json) okur. Bu istekte uygulama hiçbir bilgi göndermez; GitHub Pages, her bağlantıda olduğu gibi cihazının IP adresini görür. Yeni sürümü kurmayı seçersen dosya GitHub'dan indirilir, kurulumu Android'in kendi penceresinde sen onaylarsın. Cihazında yalnız son denetimin günü saklanır; indirilen dosya uygulamanın geçici klasöründe durur ve bir sonraki güncellemede silinir. Mağazadan (Samsung, LG, Google Play) kurulan sürümde güncellemeyi mağaza yapar, bu denetim yoktur.</p>
 
       <h2>Bu site</h2>
       <p>Bu site GitHub Pages üzerinde yayınlanır. Çerez, analitik ve dış yazı tipi kullanmaz. GitHub, siteyi sunarken ziyaretçinin IP adresini güvenlik amacıyla kaydedebilir (GitHub Gizlilik Bildirimi).</p>
@@ -89,6 +90,8 @@
         <table>
           <thead><tr><th>Sürüm</th><th>Tarih</th><th>Değişen alan</th><th>Eski değer</th><th>Yeni değer</th><th>Neden</th></tr></thead>
           <tbody>
+            <tr><td>1.6.0</td><td>27.10.2026</td><td>Kısaca</td><td>Sağlayıcı ve senin açtığın hizmetler</td><td>Ek olarak siteden kurulan Android sürümünde güncelleme denetimi için bu sitedeki sürüm dosyası</td><td>Yeni özellik: uygulama içinden güncelleme</td></tr>
+            <tr><td>1.6.0</td><td>27.10.2026</td><td>Uygulamanın bağlandığı yerler</td><td>—</td><td>Güncelleme denetimi: siteden kurulan Android sürümü günde en çok bir kez bu sitedeki sürüm dosyasını okur, bilgi göndermez; yeni sürüm GitHub'dan indirilir</td><td>Yeni özellik: uygulama içinden güncelleme</td></tr>
             <tr><td>1.5.0</td><td>26.10.2026</td><td>Yedekleme ve taşıma</td><td>—</td><td>Drive'da playlist yedeği: yedek şifresiyle şifreli ikinci dosya (beecast-yedek.json); açıkta yalnız cihaz adı ve tarih</td><td>Yeni özellik: yeni cihaza tek Google onayıyla playlist taşıma</td></tr>
             <tr><td>1.5.0</td><td>26.10.2026</td><td>Yedekleme ve taşıma</td><td>Telefon ile TV arasında yerel ağ aktarımı</td><td>Telefon ile öbür telefon/tablet arasında da ("Başka cihazdan yükle")</td><td>Yeni özellik: telefon ve tablet birbirinden veri alabilir</td></tr>
             <tr><td>1.5.0</td><td>26.10.2026</td><td>Bölüm ve düğme adları</td><td>Ayarlar › Yedekle ve taşı; "TV bağlantısını aç"</td><td>Ayarlar › Cihazlarım; "Bağlantıyı aç"</td><td>Uygulamada bölümün adı değişti</td></tr>
