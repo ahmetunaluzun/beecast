@@ -22,7 +22,7 @@
 
     <main id="content" class="doc">
       <h1>Privacy policy</h1>
-      <p class="meta">Version 1.7.0 · Effective 27 October 2026 · Covers every version of the Bee Cast app and this site</p>
+      <p class="meta">Version 1.8.0 · Effective 28 October 2026 · Covers every version of the Bee Cast app and this site</p>
 
       <div class="short">
         <p>In short: Bee Cast collects no data from you and sends nothing to us.</p>
@@ -41,7 +41,7 @@
       <p>To work, the app keeps the following in its own storage on your device:</p>
       <ul>
         <li>The playlist details you add: playlist URL, server address, username, password, MAC address and programme guide URL.</li>
-        <li>Channel, movie, series and programme lists downloaded from your provider, so they don't have to be downloaded on every launch. When you filter movies by genre, the movie genres asked from your provider are stored too.</li>
+        <li>Channel, movie, series and programme lists downloaded from your provider, so they don't have to be downloaded on every launch. When you filter movies by genre, the movie genres asked from your provider are stored too. When a movie's details arrive from your provider (you open its details or its plot is shown), its original title, cast and director are stored as well, so search can find the movie by them. No extra request is made for this; it is not included in backups and is deleted when the playlist is removed.</li>
         <li>Your favourites, watch history and where you stopped in a movie or episode. The history also keeps how many times and at what times of day you opened something; the "You usually watch at this time", "Watched often" and "Based on what you watched" suggestions are worked out from it on this device and are never sent anywhere. If you create profiles, these are kept separately for each profile.</li>
         <li>The name and colour of the profiles you create, whether each is a kids profile and the kids profile's age band (0–6, 7–12, 13–15), and which profile was last chosen on this device.</li>
         <li>The name and stream address of radios you add in Settings › Radio.</li>
@@ -90,6 +90,7 @@
         <table>
           <thead><tr><th>Version</th><th>Date</th><th>Changed section</th><th>Old value</th><th>New value</th><th>Reason</th></tr></thead>
           <tbody>
+            <tr><td>1.8.0</td><td>2026-10-28</td><td>Stored on your device</td><td>Channel, movie, series and programme lists; movie genres</td><td>A movie's original title, cast and director are also stored once its details arrive (for search)</td><td>New feature: find a movie by its original title and cast</td></tr>
             <tr><td>1.7.0</td><td>2026-10-27</td><td>Backup and transfer (phone and Drive sync)</td><td>Profiles, resume points, favourites, added radios</td><td>Also personal settings (language, audio/subtitles, playback, guide shift; the parental lock PIN only in the encrypted phone sync on your local network, never in the Drive sync file); screen settings such as theme and text size are not sent</td><td>User request: settings should come with sync</td></tr>
             <tr><td>1.7.0</td><td>2026-10-27</td><td>Backup and transfer (phone and Drive sync)</td><td>If the same profile had different names on two devices, each device kept its own</td><td>The most recently changed name and setting win</td><td>User request: a profile name should be the same on every device</td></tr>
             <tr><td>1.6.0</td><td>2026-10-27</td><td>In short</td><td>The provider and services you turn on</td><td>Also the version file on this site, for the update check in the Android version installed from this site</td><td>New feature: in-app update</td></tr>
