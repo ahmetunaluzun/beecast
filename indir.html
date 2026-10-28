@@ -33,6 +33,13 @@
           <a class="dl__btn" href="https://github.com/ahmetunaluzun/beecast/releases/latest/download/Bee-Cast-Android.apk">APK'yı indir</a>
           <p class="dl__small">Yaklaşık 20 MB · Tüm sürümler: <a href="https://github.com/ahmetunaluzun/beecast/releases">GitHub sürümleri</a></p>
         </section>
+        <section class="dl__card" aria-labelledby="h-windows">
+          <p class="dl__tag">Beta</p>
+          <h2 id="h-windows">Windows</h2>
+          <p>Windows 10 ve 11 (64 bit) bilgisayar. Fare ve klavyeyle çalışır.</p>
+          <a class="dl__btn" href="https://github.com/ahmetunaluzun/beecast/releases/latest/download/Bee-Cast-Windows.exe">Kurulumu indir</a>
+          <p class="dl__small">Yaklaşık 8 MB · <a href="#windows">Kurulum adımları</a></p>
+        </section>
         <section class="dl__card dl__card--off" aria-labelledby="h-apple">
           <p class="dl__tag">Hazırlanıyor</p>
           <h2 id="h-apple">iPhone ve iPad</h2>
@@ -73,23 +80,39 @@
         </ol>
       </section>
 
+      <section id="windows" aria-labelledby="h-win">
+        <h2 id="h-win">Windows'a kurulum</h2>
+        <p>Kurulum yönetici izni istemez; Bee Cast yalnız senin kullanıcı hesabına kurulur. Microsoft Edge WebView2 gerekir: Windows 11'de hazır gelir, eksikse kurulum kendisi indirir.</p>
+        <ol class="plain">
+          <li><b>Kurulumu indir</b>'e tıkla. Tarayıcı dosyanın sık indirilmediğini söylerse dosyanın yanındaki menüden <b>Sakla</b>'yı seç.</li>
+          <li><b>Bee-Cast-Windows.exe</b>'yi aç. Windows "Windows bilgisayarınızı korudu" derse <b>Ek bilgi</b>'ye, sonra <b>Yine de çalıştır</b>'a tıkla. Bu uyarı, kurulum dosyası henüz kod imzası taşımadığı için çıkar.</li>
+          <li>Kurulum bitince Bee Cast Başlat menüsünde ve masaüstünde olur. İlk açılışta dilini ve görünümü seçersin, sonra playlist'ini eklersin.</li>
+          <li>Oklar, Enter ve Esc kumanda gibi çalışır; fareyle tıklayabilir, pencereyi istediğin boya getirebilirsin.</li>
+        </ol>
+        <p>Bu ilk Windows sürümünde yayınlar uygulamanın yerleşik oynatıcısıyla açılır; bazı film ve kanallarda ses ya da görüntü biçimi desteklenmeyebilir. Daha geniş biçim desteği sonraki sürümlerde gelecek.</p>
+      </section>
+
       <section id="guncelleme" aria-labelledby="h-gu">
         <h2 id="h-gu">Güncelleme ve kaldırma</h2>
         <ul>
           <li>Yeni sürüm çıkınca bu sayfadan yeniden indirip aynı şekilde kur. Playlist'lerin, favorilerin ve ayarların korunur.</li>
           <li>Kaldırmak için telefonda uygulama simgesine basılı tut › <b>Kaldır</b>. Kaldırınca cihazdaki Bee Cast verileri de silinir; önce <a href="yardim.html">Cihazlarım</a> ile yedek alabilirsin.</li>
+          <li>Windows'ta yeni sürümü indirip üstüne kur. Kaldırmak için Ayarlar › Uygulamalar'da Bee Cast › <b>Kaldır</b>; kaldırma penceresinde uygulama verilerini silmeyi seçmezsen playlist'lerin ve ayarların bilgisayarda kalır.</li>
         </ul>
       </section>
 
       <section id="dogrulama" aria-labelledby="h-do">
         <h2 id="h-do">Dosyayı doğrulamak istersen</h2>
-        <p>Dosya yalnız bu sayfadan ve GitHub'daki <a href="https://github.com/ahmetunaluzun/beecast/releases">Bee Cast sürümleri</a>nden dağıtılır. Başka bir yerden aldığın APK'yı kurma.</p>
+        <p>Dosyalar yalnız bu sayfadan ve GitHub'daki <a href="https://github.com/ahmetunaluzun/beecast/releases">Bee Cast sürümleri</a>nden dağıtılır. Başka bir yerden aldığın APK'yı ya da kurulum dosyasını kurma.</p>
         <div class="table-wrap">
           <table>
             <tr><th>Sürüm</th><td>0.6.2</td></tr>
             <tr><th>Paket adı</th><td><code>app.beecast.tv</code></td></tr>
             <tr><th>APK SHA-256</th><td><code class="hash">c56a6481036e8e942d1cc3d0ce35b6cccaac0fa0851f7cb1a31ba1e02ff4998d</code></td></tr>
             <tr><th>İmza sertifikası SHA-256</th><td><code class="hash">9de6915dafb6cb9e27ebd4a6d349f1f3f3db3fcccc9f836369c87f72bd3c3ee0</code></td></tr>
+            <tr><th>Windows uygulama kimliği</th><td><code>app.beecast.desktop</code></td></tr>
+            <tr><th>Windows kurulumu SHA-256</th><td><code class="hash">adbd396f1245a283ac6424379b98fb433c99ee3f9af5447715fa6f183a020d00</code></td></tr>
+            <tr><th>Windows kod imzası</th><td>Yok (deneme sürümü imzasız)</td></tr>
           </table>
         </div>
       </section>
