@@ -201,6 +201,8 @@ h2 { font: 800 clamp(32px, 5vw, 52px)/1 var(--display); letter-spacing: -0.03em;
 .dl__card .dl__small { margin: 12px 0 0; font-size: 14px; }
 .vid { margin: 18px 0 8px; max-width: 320px; }
 .vid video { display: block; width: 100%; height: auto; border-radius: 18px; border: 1px solid var(--hive-2); background: var(--hive); }
+.vid--wide { max-width: 720px; }
+.vid--wide video { border-radius: 10px; }
 .vid figcaption { color: var(--ash); font-size: 14px; margin-top: 6px; }
 .hash { word-break: break-all; font-size: 13px; }
 .where li .now a { color: inherit; }
