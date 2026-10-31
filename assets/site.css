@@ -208,3 +208,21 @@ h2 { font: 800 clamp(32px, 5vw, 52px)/1 var(--display); letter-spacing: -0.03em;
 .where li .now a { color: inherit; }
 .doc code { overflow-wrap: anywhere; word-break: break-word; }
 .hero__cta { margin: 20px 0 0; }
+
+/* ---- özellikler sayfası (scripts/site-sayfalari.mjs) */
+.top nav a[aria-current="page"] { color: var(--wax); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.fx-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--ash); font-size: 15px; margin: 0 0 12px; }
+.doc .fx-table { min-width: 760px; font-size: 15px; }
+.fx-table thead th { vertical-align: bottom; color: var(--wax); text-align: center; }
+.fx-table thead th:first-child { text-align: left; }
+.fx-st { display: block; color: var(--ash); font-weight: 400; font-size: 13px; }
+.fx-table tbody th { font-weight: 700; color: var(--wax); }
+.fx-d { display: block; font-weight: 400; color: var(--ash); font-size: 14px; margin-top: 2px; }
+.fx { position: relative; text-align: center; font-size: 18px; white-space: nowrap; }
+.fx--y { color: var(--honey); }
+.fx--n { color: var(--hive-2); }
+.fx--p, .fx--q { color: var(--ash); }
+.fx-group th { color: var(--honey); text-transform: uppercase; letter-spacing: 0.08em; font-size: 13px; padding-top: 22px; }
+.fx-notes { color: var(--ash); font-size: 14px; padding-left: 22px; }
+.fx-table sup a { text-decoration: none; margin-left: 2px; }
