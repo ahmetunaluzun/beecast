@@ -23,13 +23,14 @@
     <main id="content" class="doc doc--wide">
       <h1>Help</h1>
       <p>This page is about moving your lists and settings between devices. Narrated videos on adding a playlist, live TV, profiles and radio: <a href="how-to.html">How-to</a>.</p>
-      <p class="meta">App version after 0.5.0 (next release) · Updated 26 October 2026</p>
+      <p class="meta">App version after 0.7.4 (next release) · Updated 3 November 2026</p>
 
       <nav class="toc" aria-label="On this page">
         <a href="#tv-to-phone">Get your TV's list on your phone</a>
         <a href="#phone-to-tv">Restore a phone backup on your TV</a>
         <a href="#tv-to-tv">Move from one TV to another</a>
         <a href="#file">Backup file</a>
+        <a href="#drive">With Google Drive</a>
         <a href="#problems">If it doesn't work</a>
       </nav>
 
@@ -171,13 +172,15 @@
 
       <section id="drive" aria-labelledby="h-dr">
         <h2 id="h-dr">To a new device with Google Drive</h2>
-        <p>No shared Wi-Fi needed. Sync carries resume points and favourites; for playlists, an encrypted backup is put on Drive.</p>
+        <p>No shared Wi-Fi needed. Sync carries resume points, favourites and settings. Playlists (server, username, password) are carried too, but only <b>encrypted with a sync password</b> you choose.</p>
         <ol class="plain">
           <li>On the device that has your list: Settings › My devices › <b>Connect Google Drive</b> and approve the code in your Google account.</li>
-          <li>In the same place, <b>Back up to Drive</b>: type a backup password (at least 6 characters) twice. <b>If you forget it, the backup can't be opened, not even by us.</b></li>
-          <li>On the new device, choose <b>Get from my other device</b> at first start (or Settings › My devices) and connect Google Drive.</li>
-          <li>The app finds the backup and asks for the password. Once you type it, the playlists arrive and sync turns on by itself.</li>
+          <li>In the same place, <b>Playlists (encrypted)</b> › <b>Sync playlists too</b>: type a sync password (at least 6 characters) twice. Write it down.</li>
+          <li>On the new device, choose <b>Get from my other device</b> at first start (or Settings › My devices) and connect Drive with the same Google account.</li>
+          <li>The app says "There are encrypted playlists on Drive". Press <b>Open</b> and type the sync password. The playlists arrive; that device won't ask again.</li>
+          <li>From then on, a playlist you add, change or delete on one device is added, changed or deleted on your other devices too.</li>
         </ol>
+        <p>You can also put a snapshot of all your data on Drive with <b>Back up to Drive</b> (with a separate backup password).</p>
       </section>
 
       <section id="file" aria-labelledby="h-file">
@@ -204,6 +207,19 @@
           <dd>Turn on local network access for Bee Cast in the phone's Settings › Apps › Bee Cast › Permissions.</dd>
           <dt>The codes are different.</dt>
           <dd>Tap <b>No</b> on the phone. Another TV at home may be trying to connect at the same time; start again from the right TV.</dd>
+          <dt id="forgot-password">I forgot my sync password.</dt>
+          <dd>The password never goes to us or to Google, so nobody can open the encrypted playlists on Drive, not even us. Your lists are not lost, though:
+            <ul>
+              <li><b>If a device still has your list</b> (usually the case): on that device, Settings › My devices › Playlists (encrypted) › <b>Change password</b>. It doesn't ask for the old password; you type a new one and the list is encrypted again with it. Enter the new password once on your other devices.</li>
+              <li><b>If no device has the list any more:</b> press <b>I forgot the password</b> and set a new one. The old encrypted section on Drive is removed and replaced with the playlists on this device. Add the list again with the details your IPTV provider gave you. Favourites, resume points and settings are carried separately from the password, so they are not lost.</li>
+            </ul>
+          </dd>
+          <dt>It says "The sync password was changed on another device".</dt>
+          <dd>The password was changed or reset on another of your devices. Press <b>Open</b> and type the new password. Until you do, the playlists on this device are left alone.</dd>
+          <dt>Are my playlists readable in Google Drive?</dt>
+          <dd>No. In the Drive file, the playlist address, username and password are stored only in encrypted form; even someone who gets into your Drive cannot read them. The sync password never goes to Drive; each device keeps the key derived from it only on itself.</dd>
+          <dt>I want to stop syncing playlists on one device.</dt>
+          <dd>On that device, Playlists (encrypted) › <b>Turn off on this device</b>. The playlists there are not deleted, just no longer synced; your other devices are not affected.</dd>
         </dl>
         <p style="margin-top:32px">If none of this helps, write to us with your TV model, the app version (Settings › About) and what the screen says.</p>
         <a class="mail" href="mailto:ahmetunaluzun@gmail.com?subject=Bee%20Cast%20help">ahmetunaluzun@gmail.com</a>
@@ -215,6 +231,7 @@
           <li>The phone only accepts the connection while My devices is open; it closes when you leave the screen.</li>
           <li>Nothing moves until the code is confirmed on the phone. Matching codes mean no other device got in between.</li>
           <li>The data is encrypted and stays on your home network; nothing goes to the internet or to us.</li>
+          <li>On Google Drive, playlists are stored only encrypted with your sync password. The password never goes to Drive or to us; nobody without it can open the list.</li>
         </ul>
         <p>Details: <a href="privacy.html#backup">Privacy policy › Backup and moving</a>.</p>
       </section>
@@ -224,6 +241,7 @@
         <table>
           <thead><tr><th>Version</th><th>Date</th><th>Changed</th><th>Old value</th><th>New value</th><th>Why</th></tr></thead>
           <tbody>
+            <tr><td>1.2.0</td><td>03.11.2026</td><td>To a new device with Google Drive; If it doesn’t work; Is it safe?</td><td>Sync does not carry playlists; an encrypted backup is put on Drive for them</td><td>Playlists are carried by sync, encrypted with the sync password; questions added: “I forgot my sync password”, “password changed on another device”, “readable in Drive?”, “turn off on this device”</td><td>New feature: encrypted playlist sync</td></tr>
             <tr><td>1.1.0</td><td>2026-10-26</td><td>Section name; new guides</td><td>Settings › Back up and move; only TV ↔ phone and file</td><td>Settings › My devices; phone-to-tablet and Google Drive to a new device guides</td><td>The section was renamed in the app; new features</td></tr>
             <tr><td>1.0.0</td><td>24.10.2026</td><td>Whole page</td><td>—</td><td>First release: back up and move guide</td><td>New feature</td></tr>
           </tbody>

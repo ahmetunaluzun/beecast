@@ -23,13 +23,14 @@
     <main id="icerik" class="doc doc--wide">
       <h1>Yardım</h1>
       <p>Bu sayfa listeni ve ayarlarını cihazlar arasında taşımayı anlatır. Playlist ekleme, canlı TV, profiller ve radyo için sesli videolar: <a href="nasil-yapilir.html">Nasıl yapılır</a>.</p>
-      <p class="meta">Uygulama sürümü 0.5.0 sonrası (sonraki sürüm) · Güncelleme: 26 Ekim 2026</p>
+      <p class="meta">Uygulama sürümü 0.7.4 sonrası (sonraki sürüm) · Güncelleme: 3 Kasım 2026</p>
 
       <nav class="toc" aria-label="Bu sayfada">
         <a href="#tv-telefon">TV'deki listeni telefona al</a>
         <a href="#telefon-tv">Telefondaki yedeği TV'ye yükle</a>
         <a href="#tv-tv">Bir TV'den öbür TV'ye taşı</a>
         <a href="#dosya">Yedek dosyası</a>
+        <a href="#drive">Google Drive ile</a>
         <a href="#sorunlar">Olmuyorsa</a>
       </nav>
 
@@ -171,13 +172,15 @@
 
       <section id="drive" aria-labelledby="h-dr">
         <h2 id="h-dr">Google Drive ile yeni cihaza</h2>
-        <p>Aynı Wi-Fi gerekmez. Senkron izleme yerini ve favorileri taşır; playlistler için Drive'a şifreli bir yedek konur.</p>
+        <p>Aynı Wi-Fi gerekmez. Senkron izleme yerini, favorileri ve ayarları taşır. Playlistler (sunucu, kullanıcı adı, şifre) de taşınır, ama yalnız senin belirlediğin <b>senkron şifresiyle şifrelenmiş</b> olarak.</p>
         <ol class="plain">
           <li>Listenin olduğu cihazda: Ayarlar › Cihazlarım › <b>Google Drive'a bağlan</b>, ekrandaki kodu Google hesabında onayla.</li>
-          <li>Aynı yerde <b>Drive'a yedekle</b>: bir yedek şifresi yaz (en az 6 karakter) ve tekrarla. <b>Şifreyi unutursan yedek açılmaz, biz de açamayız.</b></li>
-          <li>Yeni cihazda ilk açılışta <b>Başka cihazımdan al</b>'ı seç (ya da Ayarlar › Cihazlarım) ve Google Drive'a bağlan.</li>
-          <li>Uygulama yedeği bulur ve şifreyi sorar. Şifreyi yazınca playlistler gelir, senkron da kendiliğinden açılır.</li>
+          <li>Aynı yerde <b>Playlistler (şifreli)</b> › <b>Playlistleri de eşitle</b>: bir senkron şifresi yaz (en az 6 karakter) ve tekrarla. Bu şifreyi not et.</li>
+          <li>Yeni cihazda ilk açılışta <b>Başka cihazımdan al</b>'ı seç (ya da Ayarlar › Cihazlarım) ve aynı Google hesabıyla Drive'a bağlan.</li>
+          <li>Uygulama "Drive'da şifreli playlistler var" der. <b>Aç</b>'a bas, senkron şifresini yaz. Playlistler gelir; şifreyi o cihazda bir daha sormaz.</li>
+          <li>Bundan sonra bir cihazda eklediğin, değiştirdiğin ya da sildiğin playlist öbür cihazlarında da eklenir, değişir ya da silinir.</li>
         </ol>
+        <p>İstersen bütün verinin o anki kopyasını ayrıca <b>Drive'a yedekle</b> ile de koyabilirsin (ayrı bir yedek şifresiyle).</p>
       </section>
 
       <section id="dosya" aria-labelledby="h-do">
@@ -204,6 +207,19 @@
           <dd>Telefonun Ayarlar › Uygulamalar › Bee Cast › İzinler bölümünden yerel ağ iznini aç.</dd>
           <dt>Kodlar farklı.</dt>
           <dd>Telefonda <b>Hayır</b> de. Evde başka bir TV aynı anda bağlanmaya çalışıyor olabilir; işlemi doğru TV'den yeniden başlat.</dd>
+          <dt id="sifre-unuttum">Senkron şifresini unuttum.</dt>
+          <dd>Şifre bize ve Google'a gitmediği için Drive'daki şifreli playlistleri kimse açamaz, biz de açamayız. Ama listelerin kaybolmaz:
+            <ul>
+              <li><b>Listenin durduğu bir cihaz varsa</b> (çoğu zaman böyledir): o cihazda Ayarlar › Cihazlarım › Playlistler (şifreli) › <b>Şifreyi değiştir</b>. Eski şifreyi sormaz; yeni şifreyi yazarsın, liste yeni şifreyle yeniden şifrelenir. Öbür cihazlarda yeni şifreyi bir kez girersin.</li>
+              <li><b>Hiçbir cihazda liste kalmadıysa:</b> <b>Şifremi unuttum</b>'a bas, yeni şifre belirle. Drive'daki eski şifreli bölüm silinir, yerine bu cihazdaki playlistler konur. Listeyi IPTV sağlayıcının verdiği bilgilerle yeniden eklersin. Favoriler, izleme yeri ve ayarlar şifreden bağımsız taşındığı için kaybolmaz.</li>
+            </ul>
+          </dd>
+          <dt>"Senkron şifresi başka bir cihazda değişti" yazıyor.</dt>
+          <dd>Şifre başka bir cihazında değiştirilmiş ya da sıfırlanmış. <b>Aç</b>'a bas ve yeni şifreyi yaz. Şifre girilene kadar bu cihazdaki playlistlere dokunulmaz.</dd>
+          <dt>Playlistlerim Google Drive'da açıkça mı duruyor?</dt>
+          <dd>Hayır. Drive'daki dosyada playlist adresi, kullanıcı adı ve şifren yalnız şifreli hâlde durur; Drive hesabına giren biri de onları okuyamaz. Senkron şifresi Drive'a gitmez; her cihaz şifreden türettiği anahtarı yalnız kendinde saklar.</dd>
+          <dt>Bir cihazda playlist eşitlemesini kapatmak istiyorum.</dt>
+          <dd>O cihazda Playlistler (şifreli) › <b>Bu cihazda kapat</b>. Oradaki playlistler silinmez, yalnız eşitlenmez; öbür cihazlar etkilenmez.</dd>
         </dl>
         <p style="margin-top:32px">Bunlar işe yaramadıysa televizyonunun modelini, uygulama sürümünü (Ayarlar › Hakkında) ve ekranda yazanı ekleyerek yaz.</p>
         <a class="mail" href="mailto:ahmetunaluzun@gmail.com?subject=Bee%20Cast%20yard%C4%B1m">ahmetunaluzun@gmail.com</a>
@@ -215,6 +231,7 @@
           <li>Telefon bağlantıyı yalnız Cihazlarım ekranı açıkken kabul eder; ekrandan çıkınca kapanır.</li>
           <li>Hiçbir şey kod telefonda onaylanmadan aktarılmaz. Kodlar aynıysa araya başka cihaz girmemiştir.</li>
           <li>Aktarılan veri şifrelidir ve yalnız evindeki ağda gider; internete ya da bize hiçbir şey gönderilmez.</li>
+          <li>Google Drive'da playlistler yalnız senkron şifrenle şifreli durur. Şifre Drive'a ve bize gitmez; şifreyi bilmeyen kimse listeyi açamaz.</li>
         </ul>
         <p>Ayrıntı: <a href="gizlilik.html#yedekleme">Gizlilik politikası › Yedekleme ve taşıma</a>.</p>
       </section>
@@ -224,6 +241,7 @@
         <table>
           <thead><tr><th>Sürüm</th><th>Tarih</th><th>Değişen alan</th><th>Eski değer</th><th>Yeni değer</th><th>Neden</th></tr></thead>
           <tbody>
+            <tr><td>1.2.0</td><td>03.11.2026</td><td>Google Drive ile yeni cihaza; Olmuyorsa; Güvenli mi?</td><td>Senkron playlist taşımaz, playlistler için Drive’a şifreli yedek konur</td><td>Playlistler senkron şifresiyle şifreli olarak senkronla taşınır; “Senkron şifresini unuttum”, “şifre başka cihazda değişti”, “Drive’da açık mı” ve “bu cihazda kapat” soruları eklendi</td><td>Yeni özellik: şifreli playlist senkronu</td></tr>
             <tr><td>1.1.0</td><td>26.10.2026</td><td>Bölüm adı; yeni tarifler</td><td>Ayarlar › Yedekle ve taşı; yalnız TV ↔ telefon ve dosya</td><td>Ayarlar › Cihazlarım; telefondan tablete ve Google Drive ile yeni cihaza tarifleri</td><td>Uygulamada bölüm adı değişti; yeni özellikler</td></tr>
             <tr><td>1.0.0</td><td>24.10.2026</td><td>Sayfanın tamamı</td><td>—</td><td>İlk yayın: yedekle ve taşı tarifleri</td><td>Yeni özellik</td></tr>
           </tbody>
