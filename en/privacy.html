@@ -22,7 +22,7 @@
 
     <main id="content" class="doc">
       <h1>Privacy policy</h1>
-      <p class="meta">Version 1.11.0 · Effective 3 November 2026 · Covers every version of the Bee Cast app and this site</p>
+      <p class="meta">Version 1.12.0 · Effective 13 November 2026 · Covers every version of the Bee Cast app and this site</p>
 
       <div class="short">
         <p>In short: Bee Cast collects no data from you and sends nothing to us.</p>
@@ -40,8 +40,8 @@
       <h2>What is stored on your device</h2>
       <p>To work, the app keeps the following in its own storage on your device:</p>
       <ul>
-        <li>The playlist details you add: playlist URL, server address, username, password, MAC address and programme guide URL.</li>
-        <li>Channel, movie, series and programme lists downloaded from your provider, so they don't have to be downloaded on every launch. When you filter movies by genre, the movie genres asked from your provider are stored too. When a movie's details arrive from your provider (you open its details or its plot is shown), its original title, cast and director are stored as well, so search can find the movie by them. No extra request is made for this; it is not included in backups and is deleted when the playlist is removed.</li>
+        <li>The playlist details you add: playlist URL, server address, username, password, MAC address and programme guide URL. In the Windows version (versions after 0.7.4) these details are stored encrypted on disk with Windows data protection (DPAPI); only the same Windows user on the same computer can open them.</li>
+        <li>Channel, movie, series and programme lists downloaded from your provider, so they don't have to be downloaded on every launch. In versions after 0.7.4 the stream addresses in these lists are stored without your username and password; they are completed from your playlist details when you play. When you filter movies by genre, the movie genres asked from your provider are stored too. When a movie's details arrive from your provider (you open its details or its plot is shown), its original title, cast and director are stored as well, so search can find the movie by them. No extra request is made for this; it is not included in backups and is deleted when the playlist is removed.</li>
         <li>Your favourites, watch history and where you stopped in a movie or episode. The history also keeps how many times and at what times of day you opened something; the "You usually watch at this time", "Watched often" and "Based on what you watched" suggestions are worked out from it on this device and are never sent anywhere. Movies and series you mark as "Watched" are also kept (the "Watched" list and the card badge come from this). If you create profiles, these are kept separately for each profile.</li>
         <li>The name and colour of the profiles you create, whether each is a kids profile and the kids profile's age band (0–6, 7–12, 13–15), and which profile was last chosen on this device.</li>
         <li>The name and stream address of radios you add in Settings › Radio.</li>
@@ -91,6 +91,7 @@
         <table>
           <thead><tr><th>Version</th><th>Date</th><th>Changed section</th><th>Old value</th><th>New value</th><th>Reason</th></tr></thead>
           <tbody>
+            <tr><td>1.12.0</td><td>13.11.2026</td><td>Stored on your device</td><td>Did not say how playlist details and stream addresses are stored</td><td>In versions after 0.7.4 stream addresses are stored without the username and password; in the Windows version playlist details are stored encrypted on disk with Windows data protection (DPAPI)</td><td>Safer storage of sign-in details on the device</td></tr>
             <tr><td>1.11.0</td><td>03.11.2026</td><td>Backup and moving (Drive sync); Stored on your device</td><td>Sync does not carry playlist details</td><td>If playlist sync is on, playlist details go into the sync file as a section encrypted with the sync password; only the salt and time are readable; the password and key never go to Drive or to us; the derived key is stored on the device</td><td>New feature: encrypted playlist sync</td></tr>
             <tr><td>1.10.0</td><td>2026-10-31</td><td>Backup and transfer (Drive sync)</td><td>Content names are not written to the Drive file</td><td>Each device writes its own row: device name, random device ID, account hash, whether it is playing, name of the channel/title being played, time; a device silent for 30 days is removed</td><td>New feature: see which device holds an open connection</td></tr>
             <tr><td>1.9.0</td><td>2026-10-28</td><td>What is stored on your device</td><td>Favourites, watch history, where you stopped, how often and when you watch</td><td>Movies and series marked as "Watched" are also kept</td><td>New feature: Watched mark</td></tr>

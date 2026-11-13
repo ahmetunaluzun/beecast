@@ -22,7 +22,7 @@
 
     <main id="icerik" class="doc">
       <h1>Gizlilik politikası</h1>
-      <p class="meta">Sürüm 1.11.0 · Yürürlük: 3 Kasım 2026 · Kapsam: Bee Cast uygulamasının tüm sürümleri ve bu site</p>
+      <p class="meta">Sürüm 1.12.0 · Yürürlük: 13 Kasım 2026 · Kapsam: Bee Cast uygulamasının tüm sürümleri ve bu site</p>
 
       <div class="short">
         <p>Kısaca: Bee Cast senden hiçbir veri toplamaz ve bize hiçbir şey göndermez.</p>
@@ -40,8 +40,8 @@
       <h2>Cihazında saklananlar</h2>
       <p>Uygulamanın çalışması için şu bilgiler cihazın uygulama deposunda tutulur:</p>
       <ul>
-        <li>Eklediğin playlist bilgileri: liste adresi, sunucu adresi, kullanıcı adı, şifre, MAC adresi ve program rehberi adresi.</li>
-        <li>Sağlayıcıdan indirilen kanal, film, dizi ve program listeleri (her açılışta yeniden indirilmesin diye). Film türüne göre süzmek istediğinde sağlayıcıdan sorulan film türleri de saklanır. Bir filmin ayrıntısı sağlayıcıdan geldiğinde (ayrıntısını açtığında ya da konusu gösterildiğinde) filmin özgün adı, oyuncuları ve yönetmeni de saklanır; aramada film bunlarla da bulunur. Bunun için ayrıca istek gönderilmez, yedeğe girmez, playlist silinince silinir.</li>
+        <li>Eklediğin playlist bilgileri: liste adresi, sunucu adresi, kullanıcı adı, şifre, MAC adresi ve program rehberi adresi. Windows sürümünde (0.7.4'ten sonraki sürümler) bu bilgiler diskte Windows'un veri korumasıyla (DPAPI) şifreli saklanır; yalnız aynı Windows kullanıcısı aynı bilgisayarda açabilir.</li>
+        <li>Sağlayıcıdan indirilen kanal, film, dizi ve program listeleri (her açılışta yeniden indirilmesin diye). 0.7.4'ten sonraki sürümlerde bu listelerdeki yayın adresleri kullanıcı adın ve şifren olmadan saklanır; oynatırken playlist bilgilerinden tamamlanır. Film türüne göre süzmek istediğinde sağlayıcıdan sorulan film türleri de saklanır. Bir filmin ayrıntısı sağlayıcıdan geldiğinde (ayrıntısını açtığında ya da konusu gösterildiğinde) filmin özgün adı, oyuncuları ve yönetmeni de saklanır; aramada film bunlarla da bulunur. Bunun için ayrıca istek gönderilmez, yedeğe girmez, playlist silinince silinir.</li>
         <li>Favorilerin, izleme geçmişin ve bir filmde ya da bölümde kaldığın yer. Geçmişte bir içeriği kaç kez ve günün hangi saatlerinde açtığın da tutulur; "Bu saatte genelde izledikleriniz", "Sık izlenenler" ve "İzlediklerinize göre" önerileri bununla bu cihazda hesaplanır, hiçbir yere gönderilmez. "İzlendi" diye işaretlediğin filmler ve diziler de saklanır ("İzlediklerim" listesi ve kart rozeti bununla gösterilir). Profil oluşturduysan bunlar her profil için ayrı tutulur.</li>
         <li>Oluşturduğun profillerin adı, rengi, çocuk profili olup olmadığı ve çocuk profilinin yaş bandı (0–6, 7–12, 13–15); bu cihazda en son hangi profilin seçildiği.</li>
         <li>Ayarlar › Radyo'dan eklediğin radyoların adı ve yayın adresi.</li>
@@ -91,6 +91,7 @@
         <table>
           <thead><tr><th>Sürüm</th><th>Tarih</th><th>Değişen alan</th><th>Eski değer</th><th>Yeni değer</th><th>Neden</th></tr></thead>
           <tbody>
+            <tr><td>1.12.0</td><td>13.11.2026</td><td>Cihazında saklananlar</td><td>Playlist bilgilerinin ve yayın adreslerinin nasıl saklandığı yazmıyordu</td><td>0.7.4'ten sonraki sürümlerde yayın adresleri kullanıcı adı ve şifre olmadan saklanır; Windows sürümünde playlist bilgileri diskte Windows veri korumasıyla (DPAPI) şifreli saklanır</td><td>Giriş bilgilerinin cihazda daha güvenli saklanması</td></tr>
             <tr><td>1.11.0</td><td>03.11.2026</td><td>Yedekleme ve taşıma (Drive ile senkron); Cihazında saklananlar</td><td>Senkron playlist bilgilerini taşımaz</td><td>Playlist eşitlemesi açılırsa playlist bilgileri senkron şifresiyle şifreli bölüm olarak senkron dosyasına girer; açıkta yalnız tuz ve saat; şifre ve anahtar Drive’a ve bize gitmez; cihazda türetilmiş anahtar saklanır</td><td>Yeni özellik: şifreli playlist senkronu</td></tr>
             <tr><td>1.10.0</td><td>31.10.2026</td><td>Yedekleme ve taşıma (Drive ile senkron)</td><td>İçerik adı Drive dosyasına yazılmaz</td><td>Her cihaz kendi satırını yazar: cihaz adı, rastgele cihaz kimliği, hesap karması, oynatıyor mu, oynatılan kanalın/içeriğin adı, saat; 30 gün yazmayan cihaz silinir</td><td>Yeni özellik: açık bağlantının hangi cihazda olduğu görünür</td></tr>
             <tr><td>1.9.0</td><td>28.10.2026</td><td>Cihazında saklananlar</td><td>Favoriler, izleme geçmişi, kalınan yer, izleme sayısı ve saatleri</td><td>"İzlendi" diye işaretlenen filmler ve diziler de saklanır</td><td>Yeni özellik: İzlendi işareti</td></tr>
